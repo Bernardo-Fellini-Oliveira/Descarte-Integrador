@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DescarteIntegrador</string>
+    <string name="more_info">Mais Informações</string>
+    <string name="symbol_description">Imagem Símbolo Localização</string>
+    <string name="localization">Localização:</string>
+    <string name="change_localization">Mudar localização</string>
+    <string name="destination">Postos de destinação para %s</string>
+    <string name="destination_found">Encontramos %s postos em um raio de 10km</string>
+    <string name="change_material">Mudar Material</string>
+    <string name="disclaimer">Atenção, sempre recomendamos entrar em contato com o posto por conta antes de descartar. Confirme por telefone ou email as condições e horários de coleta.</string>
+    <string name="closest_locations_text">Postos de descarte mais próximos do local informado:</string>
+    <string name="move_suggestion">Não consegues mover o material sozinho(a)?</string>
+    <string name="move_order">Solicite Transporte</string>
+    <string name="not_found_suggestion">Não encontrou o que queria?</string>
+    <string name="not_found_order">Faça uma sugestão</string>
+    <string name="suggest">Sugira</string>
+    <string name="suggest_material">Sugerir Novo Material</string>
+    <string name="suggest_local">Sugerir Novo Local de Descarte</string>
+    <string name="choose">Escolher</string>
+    <string name="choose_local">Local de descarte</string>
+    <string name="choose_time">Data/Horário da coleta</string>
+    <string name="confirm">Confirmar</string>
+</resources>
