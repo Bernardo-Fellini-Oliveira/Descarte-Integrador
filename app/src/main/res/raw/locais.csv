@@ -1,0 +1,169 @@
+nome,endereco,lat,long,tipo
+UDC BERNARDINO SILVEIRA DE AMORIM,"Av. Bernardino Silveira de Amorim, 2261",-30.0024242,-51.1013863,ecoponto
+UDC CÂNCIO GOMES," Travessa Carmem, 111",-30.0187775,-51.2046783,ecoponto
+UDC CARVALHO DE FREITAS,"Rua Professor Carvalho de Freitas, 1012",-30.081431,-51.1991887,ecoponto
+UDC CENTRO,"Av. Alberto Bins, 667",-30.0278243,-51.218247,ecoponto
+UDC CRUZEIRO DO SUL,"Av. Cruzeiro do Sul, 1445",-29.6687505,-50.7861188,ecoponto
+UDC FÁTIMA PINTO," Rua Alfredo Ferreira Rodrigues, 975 ",-30.046662,-51.1552802,ecoponto
+UDC HUMAITÁ,"Rua  José Aloísio Filho, 780",-29.985608,-51.1887808,ecoponto
+UDC PRINCESA ISABEL,"Avenida Ipiranga, 2765",-30.0498504,-51.1952197,ecoponto
+ATACADÃO CEASA,"R. Vítor Valpírio, 850",-29.9719488,-51.1702765,pilhas_baterias
+BISTEK SUPERMERCADOS LTDA. - UNIDADE 28 - DEPÓSITO CENTRAL ,"Avenida das Indústrias, 1290",-29.9878088,-51.168511,pilhas_baterias
+DROGA RAIA PA AUXILIADORA A,"R. Eudoro Berlink, 750 ",-30.0242131,-51.1904373,pilhas_baterias
+ELETRÔNICA ADILSONS," R. 24 de Outubro, 1305",-30.0227996,-51.1956355,pilhas_baterias
+ASSIST. TÉCNICA ELETROD. CEDILAR LTDA.,"Av. Ipiranga, 1477",-30.0631954,-51.1509233,pilhas_baterias
+PONTO FRIO PORTO ALEGRE ZENHA,"Av. Azenha, 855a",-30.0477493,-51.2135615,pilhas_baterias
+DROGA RAIA CASEMIRO DE ABREU,"R. Casemiro de Abreu, 1216",-30.0330844,-51.1955141,pilhas_baterias
+DROGA RAIA PA CAMAQUÃ A,"Av. Otto Niemeyer, 2058",-30.1046686,-51.2388867,pilhas_baterias
+PONTO FRIO PORTO AFEGRE CAVALHADA,"Avenida da Cavalhada, 2905",-30.0974225,-51.2303548,pilhas_baterias
+CASAS BAHIA,"R. Dr. Flores, 75",-30.027989,-51.2246808,pilhas_baterias
+DROGA RAIA ANDRADAS,"R. dos Andradas, 1195",-30.0302953,-51.2309031,pilhas_baterias
+DROGA RAIA PA CENTRO B,"R. Duque de Caxias, 907",-30.0336323,-51.2279329,pilhas_baterias
+SICOOB CREDICAPITAL - 25,"Largo Visconde do Cairu, 17",-30.0263817,-51.2268952,pilhas_baterias
+DROGA RAIA PA TRISTEZA A,"Av. Wenceslau Escobar, 2287",-30.1224443,-51.2528375,pilhas_baterias
+KALUNGA,"Av. Diário de Notícias, 300",-30.0849072,-51.2457964,pilhas_baterias
+DROGA RAIA PA PASSO D'AREIA,"Av. Assis Brasil, 2127",-30.0068547,-51.1402646,pilhas_baterias
+KALUNGA,"Av. Assis Brasil, 2611",-30.0122608,-51.1607353,pilhas_baterias
+SICOOB CREDICAPITAL - 23,"Avenida Assis Brasil , 3277",-30.0068547,-51.1402646,pilhas_baterias
+DROGA RAIA CRISTÓVÃO COLOMBO,"Av. Cristóvão Colombo, 2125",-30.0259385,-51.2131863,pilhas_baterias
+DROGA RAIA PA BOA VISTA B,"Av. Cristóvão Colombo, 3701",-30.0173271,-51.1829671,pilhas_baterias
+PANASUL ELETRONICA LTDA - AT PANASONIC,"R. Álvaro Chaves, 431",-30.0148957,-51.2093721,pilhas_baterias
+SICOOB CREDICAPITAL - 40,"R. Visconde do Rio Branco, 566",-30.0160976,-51.2039601,pilhas_baterias
+DROGA RAIA PA RIO BRANCO A,"R. Mostardeiro, 747",-30.028851,-51.2066718,pilhas_baterias
+DROGA RAIA PA IPANEMA A,"R. Eng. Coelho Parreira, 668",-30.1420347,-51.2253345,pilhas_baterias
+CARREFOUR - PORTO ALEGRE,"R. Albion, 111",-30.0609137,-51.1643743,pilhas_baterias
+DROGA RAIA PA MENINO DEUS A PRINCIPAL,"Av. Getúlio Vargas, 1685",-30.0570425,-51.2228205,pilhas_baterias
+DROGA RAIA PA MENINO DEUS B ,"R. Barão de Cerro Largo, 212",-30.0644997,-51.224634,pilhas_baterias
+SICOOB CREDICAPITAL - 26,"Av. Getulio Vargas, 1039",-30.0570425,-51.2228205,pilhas_baterias
+DROGA RAIA MOINHOS DE VENTO,"R. Dr. Florêncio Ygartua, 118 ",-30.0299607,-51.2029412,pilhas_baterias
+DROGA RAIA PEDRO IVO,"R. Pedro Ivo, 847",-30.0294881,-51.1888909,pilhas_baterias
+DROGA RAIA PA NONOAI A,"R. Sepé Tiarajú, 1089 ",-30.0805592,-51.2131394,pilhas_baterias
+DROGA RAIA PA PASSO D'AREIA B,"Av. João Wallig, 1800",-30.0243478,-51.1624933,pilhas_baterias
+DROGA RAIA PA PETRÓPOLIS A ,"R. Barão do Amazonas, 278/292 ",-30.0678312,-51.1981501,pilhas_baterias
+DROGA RAIA PA PETRÓPOLIS B,"Rua Amélia Teles, 470",-30.0380230,-51.1911724,pilhas_baterias
+SICOOB CREDICAPITAL - 22,"Avenida Carlos Gomes , 1657",-30.0359256,-51.176081,pilhas_baterias
+SICOOB CREDICAPITAL - 32 ,"Av. Protásio Alves , 590",-30.0405226,-51.1296808,pilhas_baterias
+DROGA RAIA PA MENINO DEUS C,"Av. Praia de Belas, 1181",-30.0496165,-51.2287325,pilhas_baterias
+KALUNGA,"Av. Praia de Belas, 1181 ",-30.0496165,-51.2287325,pilhas_baterias
+MULTICOISAS,"Av. Praia de Belas, 1181 ",-30.0496165,-51.2287325,pilhas_baterias
+DROGA RAIA PA SANTANA A,"Rua Jerônimo de Ornelas, 241",-30.0421074,-51.2122012,pilhas_baterias
+ATACADÃO SERTÓRIO,"Av. Sertório, 6767",-29.9989259,-51.1410797,pilhas_baterias
+LEROY MERLIN,"Av. Sertório, 6767",-29.9989259,-51.1410797,pilhas_baterias
+DROGA RAIA TRÊS FIGUEIRAS,"R. José Antônio Aranha, 423",-30.0309474,-51.168721,pilhas_baterias
+SICOOB CREDICAPITAL - 24,"Avenida Wenceslau Escobar,1823",-30.1048277,-51.2544127,pilhas_baterias
+BISTEK SUPERMERCADOS LTDA. - LOJA 26,"Av. do Forte, 1396",-30.0227771,-51.151122,pilhas_baterias
+Associação Nacional da Indústria de Pneumáticos,"Av. Plínio Kroeff, 2050",-29.998381,-51.114552,pneus
+ABT COMERCIAL,"Av. São Pedro, 924",-30.0113247,-51.199764,lampadas
+ABT COMERCIAL,"Av. Eduardo Prado, 1.941",-30.1318535,-51.2179773,lampadas
+THONY FERRAGEM,"Av. Cel. Lucas de Oliveira, 1.780",-30.0279831,-51.1946375,lampadas
+THONY FERRAGEM,"R. Barão do Amazonas, 460",-30.0678312,-51.1981501,lampadas
+THONY FERRAGEM,"Av. Getúlio Vargas, 881",-30.0570425,-51.2228205,lampadas
+CARREFOUR,"R. Albion, 111",-30.0609137,-51.1643743,lampadas
+CARREFOUR,"Av. Plinio Brasil Milano, 2343",-30.0132295,-51.1709017,lampadas
+LEROY MERLIN,"Av. Sertório, 6767",-29.9989259,-51.1410797,lampadas
+BIG SERTÓRIO,"Av. Sertório, 6600",-29.997099,-51.1404591,lampadas
+ILUMINIM,"Av. Ipiranga, 7532",-30.0631954,-51.1509233,lampadas
+PONTO SUL,"R. Vicente Monteggia, 989",-30.0964238,-51.2213241,lampadas
+CIMAFER,"Av. Porto Alegre, 11",-30.0592306,-51.2087123,lampadas
+FERRAGEM DA CRISTÓVÃO,"Av. Cristóvão Colombo, 1276",-30.0259385,-51.2131863,lampadas
+MULTI FERRAGEM,"Av. Júlio De Castilhos, 337",-30.024794,-51.2223965,lampadas
+ATACADÃO 88 SERTÓRIO,"Av. Sertório, 6767",-29.9989259,-51.1410797,lampadas
+ZAFFARI - POA,"Av. Protasio Alves, 3814",-30.0385439,-51.1727543,lampadas
+FIGUEIREDO MATERIAL DE CONSTRUÇÃO,"R. Barão do Amazonas, 1031",-30.0554471,-51.189568,lampadas
+BISTEK LOJA 26,"Av. Do Forte, 1396",-30.0227771,-51.151122,lampadas
+LUZ E LUSTRES - POA,"Av. São Pedro, 1117",-30.0113247,-51.199764,lampadas
+REDEMAC JUCA BATISTA,"Av. Juca Batista, 2256",-30.1913895,-51.1753526,lampadas
+REDEMAC OTTO,"Av. Otto Niemeyer, 1066",-30.1077978,-51.2480084,lampadas
+REDEMAC RESTINGA,"Estrada Barro Vermelho,7275",-30.163023,-51.143796,lampadas
+ATACADÃO 288 Porto Alegre Ceasa,"R. Vitor Valpiro, 850",-29.9726682,-51.1707376,lampadas
+PLENOBRAS,"R. Voluntários Da Pátria, 2035",-29.9945131,-51.2050304,lampadas
+TUA CASA FERRAGEM,"R. Anita Garibaldi, 888",-30.0269538,-51.1908156,lampadas
+MADEIREIRA BOA VISTA,"Av. Lami, 4580",-30.2132174,-51.1297432,lampadas
+CALVIVIAN - ARESUL,"R. Condor, 820",-30.0705909,-51.1715772,lampadas
+PETTER FERRAGEM,"Av. Baltazar Oliveira Garcia, 2667",-30.0151297,-51.1187634,lampadas
+DESCO ATACADO - RAMIRO BARCELOS,"R. Ramiro Barcelos, 430",-30.0296248,-51.208492,lampadas
+TELHANORTE TUMELERO - MATRIZ,"Av. Assis Brasil, 5577",-30.0013701,-51.1327358,lampadas
+TELHANORTE TUMELEIRO - CRISTAL,"Av. Icaraí, 1719",-30.0944272,-51.2449749,lampadas
+TELHANORTE TUMELEIRO - CENTRO,"R. Conceição, 283",-30.0260593,-51.2198672,lampadas
+TELHANORTE TUMELEIRO - PARTENON,"Av. Bento Gonçalves, 1414",-30.0544574,-51.1988614,lampadas
+TELHANORTE TUMELEIRO - IPIRANGA,"Av. Ipiranga, 6777",-30.0631954,-51.1509233,lampadas
+TELHANORTE TUMELEIRO - MEDIANEIRA,"Av. Dr. Carlos Barbosa, 1137",-30.0669971,-51.2127133,lampadas
+TELHANORTE TUMELEIRO - IPANEMA,"Av. Eduardo Prado, 1730",-30.1318535,-51.2179773,lampadas
+SUPPER RISSUL F01,"Av. São Pedro, 512",-30.0093997,-51.2042347,lampadas
+SUPPER RISSUL F19,"Av. Cristovão Colombo, 1980",-30.0259385,-51.2131863,lampadas
+IMEC SUPERMERCADOS - DESCO ATACADO JUCA BATISTA,"Av. Edgar Pires De Castro, 25",-30.1583275,-51.1898287,lampadas
+Sebanella,"Av. José Lutzenberger, 336",-29.9769021,-51.1753703,gesso
+Multiplus Reciclagem de Gesso,"Avenida Severo Dullius, 125",-29.9872531,-51.1611538,gesso
+Coletor de Resíduos de vidro 1,"Avenida Borges de Medeiros, 36",-30.0397733,-51.2284418,vidro
+Coletor de Resíduos de vidro 2,"Avenida Edvaldo Pereira Paiva, 481",-30.0421057,-51.2386476,vidro
+Coletor de Resíduos de vidro 3,"Avenida Edvaldo Pereira Paiva, 800",-30.0421057,-51.2386476,vidro
+Coletor de Resíduos de vidro 4,"Avenida Presidente João Goulart, 44",-30.0350117,-51.2408727,vidro
+Coletor de Resíduos de vidro 5,"Avenida Edvaldo Pereira Paiva, 2779",-30.0421057,-51.2386476,vidro
+Coletor de Resíduos de vidro 6,"Avenida Edvaldo Pereira Paiva, 902",-30.0421057,-51.2386476,vidro
+Coletor de Resíduos de vidro 7,"Avenida Borges de Medeiros, 2697",-30.0436275,-51.2288075,vidro
+Coletor de Resíduos de vidro 8,"Rua General Salustiano, 210",-30.0348973,-51.2399364,vidro
+Coletor de Resíduos de vidro 9,"Rua dos Andradas, 725",-30.0302953,-51.2309031,vidro
+Coletor de Resíduos de vidro 10,"Avenida José Bonifácio, 25",-30.0395945,-51.2157413,vidro
+Coletor de Resíduos de vidro 11,"Avenida Osvaldo Aranha, 1.021",-30.03377,-51.2150129,vidro
+Coletor de Resíduos de vidro 12,Parque Germânia,-30.025593,-51.1578025,vidro
+Coletor de Resíduos de vidro 13,"Rua Sarmento Leite, 245",-30.0313848,-51.2207616,vidro
+Coletor de Resíduos de vidro 14,"Avenida Goethe, 2128",-30.0249931,-51.2002879,vidro
+Coletor de Resíduos de vidro 15,"Rua Jaraguá, 686",-30.0367356,-51.1915644,vidro
+CRIP Extremo Sul,"Av. Desembargador Mello Guimarães, 12",-30.2079665,-51.1916049,oleo de fritura
+EEEF Evaristo Flores da Cunha,Av. Heitor Viêira,-30.2095815,-51.1866861,oleo de fritura
+Escola Dr. Glicério Alves,"R. Eustáquio Inácio da Silveira, 300",-30.2101716,-51.1770558,oleo de fritura
+Associação Clube de Mães Estrela de Belém,"R. Florêncio Faria, 215",-30.2080036,-51.1765661,oleo de fritura
+UT Padre Cacique,"Estr. do Rincão, 6781",-30.1140577,-51.1663093,oleo de fritura
+Centro Integrado de Desenvolvimento Ltda.,"R. Fernandes Vieira, 553",-30.0337879,-51.2109522,oleo de fritura
+UDC Fátima- Pinto,"R. Alfredo Ferreira Rodrigues, 975",-30.046662,-51.1552802,oleo de fritura
+Escola de Educação Infantil Tia Beth,"R. Vinte e Sete, 125",-30.0252596,-51.1072874,oleo de fritura
+Escola de Educação Infantil Somai,"R. Bom Jesus, 610",-30.0435319,-51.152329,oleo de fritura
+Conjunto Habitacional Camaquã,"Tv. Escobar, 61",-30.1027606,-51.2369403,oleo de fritura
+Creche Renascer Vila América,"R. Roberto Félix Bertoi, 25",-30.1023076,-51.2423519,oleo de fritura
+Capatazia Cavalhada,"Av. Cavalhada, 6735",-30.0974225,-51.2303548,oleo de fritura
+Campo do Periquito,"Av. Vicente Monteggia, 2682",-30.1145179,-51.2125103,oleo de fritura
+Unidade de Saúde Cidade de Deus,"R. da Fé, 350",-30.1160608,-51.2278929,oleo de fritura
+UT Cavalhada,"R. Monsenhor Ruben Neis, 730",-30.1171752,-51.2283398,oleo de fritura
+EMEF Dep. Marcirio Goulart Loureiro,"R. Saibreira, 1",-30.0765025,-51.1736064,oleo de fritura
+Unidade de Serviço Conceição,"R. Alberto Bins, sob a Elevada Conceição ",-30.0277783,-51.2198683,oleo de fritura
+Faculdade SENAC Porto Alegre,"R. Cel. Genuíno, 130",-30.0354578,-51.2261622,oleo de fritura
+Centro Administrativo do Estado Fernando Ferrari - CAFF,"Av. Borges de Medeiros, 1501",-30.0403255,-51.2311931,oleo de fritura
+Nova Acrópole Porto Alegre,"Pça. Mal. Deodoro, 148",-30.0328262,-51.2294322,oleo de fritura
+EMEF Porto Alegre,"R. Washington Luís, 203",-29.3434238,-49.7309025,oleo de fritura
+DEP Fábrica de Pré- Moldados,"Av. Loureiro da Silva, 250",-30.0421057,-51.2386476,oleo de fritura
+Ksarosa Reciclagem,"R. Voluntários da Pátria, 1039",-29.9945131,-51.2050304,oleo de fritura
+SMSURB,"R. Gen. Lima e Silva, 972",-30.0407087,-51.2185514,oleo de fritura
+UDC Cruzeiro do Sul,"Av. Cruzeiro do Sul, 1445",-29.6687505,-50.7861188,oleo de fritura
+UDC Câncio Gomes,"Tv. Carmen, 111",-30.0187775,-51.2046783,oleo de fritura
+UT Reciclando Pela Vida,"R. Dr. Júlio Olszewski, 01",-30.0201256,-51.2151119,oleo de fritura
+UT Anjos da Ecologia,"R. Dr. Júlio Olszewski, 01",-30.0201256,-51.2151119,oleo de fritura
+UT Paraíba,"Rua Paraíba, 177",-30.0177376,-51.2118962,oleo de fritura
+UT Anitas,"R. Voluntários da Pátria, 4201,",-29.9945131,-51.2050304,oleo de fritura
+UDC Carvalho de Freitas,"R. Carvalho de Freitas, 1012",-30.0783849,-51.2048907,oleo de fritura
+EMEF Prof. Anísio Teixeira,"R. Francisco Mattos Terres, 40",-30.1594639,-51.2002636,oleo de fritura
+CRAS - Centro de Referência de Assistência Social da Hípica,"R. Geraldo Tollens Linck, 235",-30.1586621,-51.1761249,oleo de fritura
+UDC Humaitá,"R. José Aloísio Filho, 780",-29.985608,-51.1887808,oleo de fritura
+Unidade de Serviço IAPI - Seção Norte,"Av. Assis Brasil, 1715",-30.0068547,-51.1402646,oleo de fritura
+Unidade de Serviço Ipanema,"Av. Guaíba, 2027",-30.1608309,-51.2274242,oleo de fritura
+EEEF Monte Líbano,"R. Lemúria, 10",-30.1304272,-51.226101,oleo de fritura
+Anchieta Comercial de Combustíveis,"Av. Salvador França, 981",-30.0598422,-51.1847424,oleo de fritura
+Unidade Tibiriçá/DMLU,"R. Engº Antônio Carlos Tibiriçá, 365",-30.0476358,-51.1749691,oleo de fritura
+EMEI Vale Verde,"Bc. Franklin, 270",-30.0421516,-51.1432506,oleo de fritura
+EMEIF Prof. Luiz Francisco Lucena Borges,"R. Cláudio Manuel da Costa, 270",-29.5997873,-50.8039158,oleo de fritura
+UTC,"Estr. Afonso Lourenço Mariante, 4401",-30.1022751,-51.1444502,oleo de fritura
+Capatazia Niterói,"Av. Niterói, 19",-30.0686425,-51.2124012,oleo de fritura
+Ponto das Padarias,"Av. Sertório, 1105",-30.0031495,-51.1824383,oleo de fritura
+UT Frederico Mentz,"Rua Frederico Mentz, 1167",-29.9800952,-51.1969029,oleo de fritura
+UT Campo da Tuca,"R. D, 200, Vila Campo da Tuca",-30.0729512,-51.1728191,oleo de fritura
+EMEI Érico Verísssimo,"R. Modesto Franco, 100",-30.0146956,-51.128264,oleo de fritura
+Magda Rose Barbosa da Silva,"Bc. Souza Costa, 1684",-30.0534101,-51.1405585,oleo de fritura
+UT Coopertinga,"Estrada João Antônio da Silveira, 3240",-30.1372583,-51.0999481,oleo de fritura
+Instituição de Educação Infantil Madre Teresa,"R. Wolfran Metzler, 605",-30.0248194,-51.1030841,oleo de fritura
+UT Santíssima Trindade,"Av. Vila Santíssima Trindade, 141",-30.0003577,-51.1072227,oleo de fritura
+UDC Bernardino Silveira Amorim,"Av. Bernardino Silveira Amorim, 2261",-30.0024242,-51.1013863,oleo de fritura
+UT Rubem Berta,"Estr. Antonio Severino, 1317",-30.0249954,-51.0886292,oleo de fritura
+UDC Princesa Isabel,"Av. Ipiranga, 2765",-30.0498504,-51.1952197,oleo de fritura
+Seção Nordeste/ ZEFERINO,"R. D. Jaime de Barros Câmara, 815",-30.0034452,-51.1294985,oleo de fritura
+Escola Adventista de Ensino Fundamental de Sarandi,"R. Passos Figueroa, 841",-29.7754467,-51.1671956,oleo de fritura
+Condomínio Vivenda dos Trevos,"R. Dr. Pereira Neto, 2200",-30.1047671,-51.2317416,oleo de fritura
+Colégio Adventista Mal.,"R. Mali, 255",-30.0130582,-51.1489579,oleo de fritura
