@@ -40,7 +40,7 @@ DROGA RAIA PEDRO IVO,"R. Pedro Ivo, 847",-30.0294881,-51.1888909,pilhas_baterias
 DROGA RAIA PA NONOAI A,"R. Sepé Tiarajú, 1089 ",-30.0805592,-51.2131394,pilhas_baterias
 DROGA RAIA PA PASSO D'AREIA B,"Av. João Wallig, 1800",-30.0243478,-51.1624933,pilhas_baterias
 DROGA RAIA PA PETRÓPOLIS A ,"R. Barão do Amazonas, 278/292 ",-30.0678312,-51.1981501,pilhas_baterias
-DROGA RAIA PA PETRÓPOLIS B,"Rua Amélia Teles, 470",-30.0380230,-51.1911724,pilhas_baterias
+DROGA RAIA PA PETRÓPOLIS B,"Rua Amélia Teles, 470",-30.038023,-51.1911724,pilhas_baterias
 SICOOB CREDICAPITAL - 22,"Avenida Carlos Gomes , 1657",-30.0359256,-51.176081,pilhas_baterias
 SICOOB CREDICAPITAL - 32 ,"Av. Protásio Alves , 590",-30.0405226,-51.1296808,pilhas_baterias
 DROGA RAIA PA MENINO DEUS C,"Av. Praia de Belas, 1181",-30.0496165,-51.2287325,pilhas_baterias
@@ -109,61 +109,61 @@ Coletor de Resíduos de vidro 12,Parque Germânia,-30.025593,-51.1578025,vidro
 Coletor de Resíduos de vidro 13,"Rua Sarmento Leite, 245",-30.0313848,-51.2207616,vidro
 Coletor de Resíduos de vidro 14,"Avenida Goethe, 2128",-30.0249931,-51.2002879,vidro
 Coletor de Resíduos de vidro 15,"Rua Jaraguá, 686",-30.0367356,-51.1915644,vidro
-CRIP Extremo Sul,"Av. Desembargador Mello Guimarães, 12",-30.2079665,-51.1916049,oleo de fritura
-EEEF Evaristo Flores da Cunha,Av. Heitor Viêira,-30.2095815,-51.1866861,oleo de fritura
-Escola Dr. Glicério Alves,"R. Eustáquio Inácio da Silveira, 300",-30.2101716,-51.1770558,oleo de fritura
-Associação Clube de Mães Estrela de Belém,"R. Florêncio Faria, 215",-30.2080036,-51.1765661,oleo de fritura
-UT Padre Cacique,"Estr. do Rincão, 6781",-30.1140577,-51.1663093,oleo de fritura
-Centro Integrado de Desenvolvimento Ltda.,"R. Fernandes Vieira, 553",-30.0337879,-51.2109522,oleo de fritura
-UDC Fátima- Pinto,"R. Alfredo Ferreira Rodrigues, 975",-30.046662,-51.1552802,oleo de fritura
-Escola de Educação Infantil Tia Beth,"R. Vinte e Sete, 125",-30.0252596,-51.1072874,oleo de fritura
-Escola de Educação Infantil Somai,"R. Bom Jesus, 610",-30.0435319,-51.152329,oleo de fritura
-Conjunto Habitacional Camaquã,"Tv. Escobar, 61",-30.1027606,-51.2369403,oleo de fritura
-Creche Renascer Vila América,"R. Roberto Félix Bertoi, 25",-30.1023076,-51.2423519,oleo de fritura
-Capatazia Cavalhada,"Av. Cavalhada, 6735",-30.0974225,-51.2303548,oleo de fritura
-Campo do Periquito,"Av. Vicente Monteggia, 2682",-30.1145179,-51.2125103,oleo de fritura
-Unidade de Saúde Cidade de Deus,"R. da Fé, 350",-30.1160608,-51.2278929,oleo de fritura
-UT Cavalhada,"R. Monsenhor Ruben Neis, 730",-30.1171752,-51.2283398,oleo de fritura
-EMEF Dep. Marcirio Goulart Loureiro,"R. Saibreira, 1",-30.0765025,-51.1736064,oleo de fritura
-Unidade de Serviço Conceição,"R. Alberto Bins, sob a Elevada Conceição ",-30.0277783,-51.2198683,oleo de fritura
-Faculdade SENAC Porto Alegre,"R. Cel. Genuíno, 130",-30.0354578,-51.2261622,oleo de fritura
-Centro Administrativo do Estado Fernando Ferrari - CAFF,"Av. Borges de Medeiros, 1501",-30.0403255,-51.2311931,oleo de fritura
-Nova Acrópole Porto Alegre,"Pça. Mal. Deodoro, 148",-30.0328262,-51.2294322,oleo de fritura
-EMEF Porto Alegre,"R. Washington Luís, 203",-29.3434238,-49.7309025,oleo de fritura
-DEP Fábrica de Pré- Moldados,"Av. Loureiro da Silva, 250",-30.0421057,-51.2386476,oleo de fritura
-Ksarosa Reciclagem,"R. Voluntários da Pátria, 1039",-29.9945131,-51.2050304,oleo de fritura
-SMSURB,"R. Gen. Lima e Silva, 972",-30.0407087,-51.2185514,oleo de fritura
-UDC Cruzeiro do Sul,"Av. Cruzeiro do Sul, 1445",-29.6687505,-50.7861188,oleo de fritura
-UDC Câncio Gomes,"Tv. Carmen, 111",-30.0187775,-51.2046783,oleo de fritura
-UT Reciclando Pela Vida,"R. Dr. Júlio Olszewski, 01",-30.0201256,-51.2151119,oleo de fritura
-UT Anjos da Ecologia,"R. Dr. Júlio Olszewski, 01",-30.0201256,-51.2151119,oleo de fritura
-UT Paraíba,"Rua Paraíba, 177",-30.0177376,-51.2118962,oleo de fritura
-UT Anitas,"R. Voluntários da Pátria, 4201,",-29.9945131,-51.2050304,oleo de fritura
-UDC Carvalho de Freitas,"R. Carvalho de Freitas, 1012",-30.0783849,-51.2048907,oleo de fritura
-EMEF Prof. Anísio Teixeira,"R. Francisco Mattos Terres, 40",-30.1594639,-51.2002636,oleo de fritura
-CRAS - Centro de Referência de Assistência Social da Hípica,"R. Geraldo Tollens Linck, 235",-30.1586621,-51.1761249,oleo de fritura
-UDC Humaitá,"R. José Aloísio Filho, 780",-29.985608,-51.1887808,oleo de fritura
-Unidade de Serviço IAPI - Seção Norte,"Av. Assis Brasil, 1715",-30.0068547,-51.1402646,oleo de fritura
-Unidade de Serviço Ipanema,"Av. Guaíba, 2027",-30.1608309,-51.2274242,oleo de fritura
-EEEF Monte Líbano,"R. Lemúria, 10",-30.1304272,-51.226101,oleo de fritura
-Anchieta Comercial de Combustíveis,"Av. Salvador França, 981",-30.0598422,-51.1847424,oleo de fritura
-Unidade Tibiriçá/DMLU,"R. Engº Antônio Carlos Tibiriçá, 365",-30.0476358,-51.1749691,oleo de fritura
-EMEI Vale Verde,"Bc. Franklin, 270",-30.0421516,-51.1432506,oleo de fritura
-EMEIF Prof. Luiz Francisco Lucena Borges,"R. Cláudio Manuel da Costa, 270",-29.5997873,-50.8039158,oleo de fritura
-UTC,"Estr. Afonso Lourenço Mariante, 4401",-30.1022751,-51.1444502,oleo de fritura
-Capatazia Niterói,"Av. Niterói, 19",-30.0686425,-51.2124012,oleo de fritura
-Ponto das Padarias,"Av. Sertório, 1105",-30.0031495,-51.1824383,oleo de fritura
-UT Frederico Mentz,"Rua Frederico Mentz, 1167",-29.9800952,-51.1969029,oleo de fritura
-UT Campo da Tuca,"R. D, 200, Vila Campo da Tuca",-30.0729512,-51.1728191,oleo de fritura
-EMEI Érico Verísssimo,"R. Modesto Franco, 100",-30.0146956,-51.128264,oleo de fritura
-Magda Rose Barbosa da Silva,"Bc. Souza Costa, 1684",-30.0534101,-51.1405585,oleo de fritura
-UT Coopertinga,"Estrada João Antônio da Silveira, 3240",-30.1372583,-51.0999481,oleo de fritura
-Instituição de Educação Infantil Madre Teresa,"R. Wolfran Metzler, 605",-30.0248194,-51.1030841,oleo de fritura
-UT Santíssima Trindade,"Av. Vila Santíssima Trindade, 141",-30.0003577,-51.1072227,oleo de fritura
-UDC Bernardino Silveira Amorim,"Av. Bernardino Silveira Amorim, 2261",-30.0024242,-51.1013863,oleo de fritura
-UT Rubem Berta,"Estr. Antonio Severino, 1317",-30.0249954,-51.0886292,oleo de fritura
-UDC Princesa Isabel,"Av. Ipiranga, 2765",-30.0498504,-51.1952197,oleo de fritura
-Seção Nordeste/ ZEFERINO,"R. D. Jaime de Barros Câmara, 815",-30.0034452,-51.1294985,oleo de fritura
-Escola Adventista de Ensino Fundamental de Sarandi,"R. Passos Figueroa, 841",-29.7754467,-51.1671956,oleo de fritura
-Condomínio Vivenda dos Trevos,"R. Dr. Pereira Neto, 2200",-30.1047671,-51.2317416,oleo de fritura
-Colégio Adventista Mal.,"R. Mali, 255",-30.0130582,-51.1489579,oleo de fritura
+CRIP Extremo Sul,"Av. Desembargador Mello Guimarães, 12",-30.2079665,-51.1916049,oleo
+EEEF Evaristo Flores da Cunha,Av. Heitor Viêira,-30.2095815,-51.1866861,oleo
+Escola Dr. Glicério Alves,"R. Eustáquio Inácio da Silveira, 300",-30.2101716,-51.1770558,oleo
+Associação Clube de Mães Estrela de Belém,"R. Florêncio Faria, 215",-30.2080036,-51.1765661,oleo
+UT Padre Cacique,"Estr. do Rincão, 6781",-30.1140577,-51.1663093,oleo
+Centro Integrado de Desenvolvimento Ltda.,"R. Fernandes Vieira, 553",-30.0337879,-51.2109522,oleo
+UDC Fátima- Pinto,"R. Alfredo Ferreira Rodrigues, 975",-30.046662,-51.1552802,oleo
+Escola de Educação Infantil Tia Beth,"R. Vinte e Sete, 125",-30.0252596,-51.1072874,oleo
+Escola de Educação Infantil Somai,"R. Bom Jesus, 610",-30.0435319,-51.152329,oleo
+Conjunto Habitacional Camaquã,"Tv. Escobar, 61",-30.1027606,-51.2369403,oleo
+Creche Renascer Vila América,"R. Roberto Félix Bertoi, 25",-30.1023076,-51.2423519,oleo
+Capatazia Cavalhada,"Av. Cavalhada, 6735",-30.0974225,-51.2303548,oleo
+Campo do Periquito,"Av. Vicente Monteggia, 2682",-30.1145179,-51.2125103,oleo
+Unidade de Saúde Cidade de Deus,"R. da Fé, 350",-30.1160608,-51.2278929,oleo
+UT Cavalhada,"R. Monsenhor Ruben Neis, 730",-30.1171752,-51.2283398,oleo
+EMEF Dep. Marcirio Goulart Loureiro,"R. Saibreira, 1",-30.0765025,-51.1736064,oleo
+Unidade de Serviço Conceição,"R. Alberto Bins, sob a Elevada Conceição ",-30.0277783,-51.2198683,oleo
+Faculdade SENAC Porto Alegre,"R. Cel. Genuíno, 130",-30.0354578,-51.2261622,oleo
+Centro Administrativo do Estado Fernando Ferrari - CAFF,"Av. Borges de Medeiros, 1501",-30.0403255,-51.2311931,oleo
+Nova Acrópole Porto Alegre,"Pça. Mal. Deodoro, 148",-30.0328262,-51.2294322,oleo
+EMEF Porto Alegre,"R. Washington Luís, 203",-29.3434238,-49.7309025,oleo
+DEP Fábrica de Pré- Moldados,"Av. Loureiro da Silva, 250",-30.0421057,-51.2386476,oleo
+Ksarosa Reciclagem,"R. Voluntários da Pátria, 1039",-29.9945131,-51.2050304,oleo
+SMSURB,"R. Gen. Lima e Silva, 972",-30.0407087,-51.2185514,oleo
+UDC Cruzeiro do Sul,"Av. Cruzeiro do Sul, 1445",-29.6687505,-50.7861188,oleo
+UDC Câncio Gomes,"Tv. Carmen, 111",-30.0187775,-51.2046783,oleo
+UT Reciclando Pela Vida,"R. Dr. Júlio Olszewski, 01",-30.0201256,-51.2151119,oleo
+UT Anjos da Ecologia,"R. Dr. Júlio Olszewski, 01",-30.0201256,-51.2151119,oleo
+UT Paraíba,"Rua Paraíba, 177",-30.0177376,-51.2118962,oleo
+UT Anitas,"R. Voluntários da Pátria, 4201,",-29.9945131,-51.2050304,oleo
+UDC Carvalho de Freitas,"R. Carvalho de Freitas, 1012",-30.0783849,-51.2048907,oleo
+EMEF Prof. Anísio Teixeira,"R. Francisco Mattos Terres, 40",-30.1594639,-51.2002636,oleo
+CRAS - Centro de Referência de Assistência Social da Hípica,"R. Geraldo Tollens Linck, 235",-30.1586621,-51.1761249,oleo
+UDC Humaitá,"R. José Aloísio Filho, 780",-29.985608,-51.1887808,oleo
+Unidade de Serviço IAPI - Seção Norte,"Av. Assis Brasil, 1715",-30.0068547,-51.1402646,oleo
+Unidade de Serviço Ipanema,"Av. Guaíba, 2027",-30.1608309,-51.2274242,oleo
+EEEF Monte Líbano,"R. Lemúria, 10",-30.1304272,-51.226101,oleo
+Anchieta Comercial de Combustíveis,"Av. Salvador França, 981",-30.0598422,-51.1847424,oleo
+Unidade Tibiriçá/DMLU,"R. Engº Antônio Carlos Tibiriçá, 365",-30.0476358,-51.1749691,oleo
+EMEI Vale Verde,"Bc. Franklin, 270",-30.0421516,-51.1432506,oleo
+EMEIF Prof. Luiz Francisco Lucena Borges,"R. Cláudio Manuel da Costa, 270",-29.5997873,-50.8039158,oleo
+UTC,"Estr. Afonso Lourenço Mariante, 4401",-30.1022751,-51.1444502,oleo
+Capatazia Niterói,"Av. Niterói, 19",-30.0686425,-51.2124012,oleo
+Ponto das Padarias,"Av. Sertório, 1105",-30.0031495,-51.1824383,oleo
+UT Frederico Mentz,"Rua Frederico Mentz, 1167",-29.9800952,-51.1969029,oleo
+UT Campo da Tuca,"R. D, 200, Vila Campo da Tuca",-30.0729512,-51.1728191,oleo
+EMEI Érico Verísssimo,"R. Modesto Franco, 100",-30.0146956,-51.128264,oleo
+Magda Rose Barbosa da Silva,"Bc. Souza Costa, 1684",-30.0534101,-51.1405585,oleo
+UT Coopertinga,"Estrada João Antônio da Silveira, 3240",-30.1372583,-51.0999481,oleo
+Instituição de Educação Infantil Madre Teresa,"R. Wolfran Metzler, 605",-30.0248194,-51.1030841,oleo
+UT Santíssima Trindade,"Av. Vila Santíssima Trindade, 141",-30.0003577,-51.1072227,oleo
+UDC Bernardino Silveira Amorim,"Av. Bernardino Silveira Amorim, 2261",-30.0024242,-51.1013863,oleo
+UT Rubem Berta,"Estr. Antonio Severino, 1317",-30.0249954,-51.0886292,oleo
+UDC Princesa Isabel,"Av. Ipiranga, 2765",-30.0498504,-51.1952197,oleo
+Seção Nordeste/ ZEFERINO,"R. D. Jaime de Barros Câmara, 815",-30.0034452,-51.1294985,oleo
+Escola Adventista de Ensino Fundamental de Sarandi,"R. Passos Figueroa, 841",-29.7754467,-51.1671956,oleo
+Condomínio Vivenda dos Trevos,"R. Dr. Pereira Neto, 2200",-30.1047671,-51.2317416,oleo
+Colégio Adventista Mal.,"R. Mali, 255",-30.0130582,-51.1489579,oleo
