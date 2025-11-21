@@ -5,12 +5,24 @@ import com.example.descarteintegrador.R
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
+//os nomes desse enum DEVEM estar iguais aos que estão no CSV
+enum class ResidueType {
+    ecoponto,
+    pilhas_baterias,
+    pneus,
+    lampadas,
+    gesso,
+    vidro,
+    oleo,
+    UNKNOWN // Add an UNKNOWN type for handling unparsable or new types
+}
+
 data class LocalColeta(
     val nome: String,
     val endereco: String,
     val lat: Double,
     val lng: Double,
-    val tipo: String
+    val tipo: ResidueType
 )
 
 object DataSource {
@@ -37,7 +49,7 @@ object DataSource {
                     val endereco: String
                     val lat: Double
                     val lng: Double
-                    val tipo: String
+                    val tipoString: String // Temporarily read as String
 
                     // Find the start of the quoted address field
                     val firstQuoteIndex = rawLine.indexOf('"')
@@ -51,7 +63,13 @@ object DataSource {
                                 endereco = simpleParts[1]
                                 lat = simpleParts[2].toDouble()
                                 lng = simpleParts[3].toDouble()
-                                tipo = simpleParts[4]
+                                tipoString = simpleParts[4]
+                                val tipo = try {
+                                    ResidueType.valueOf(tipoString.lowercase())
+                                } catch (e: IllegalArgumentException) {
+                                    println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
+                                    ResidueType.UNKNOWN
+                                }
                                 locaisColeta.add(LocalColeta(nome, endereco, lat, lng, tipo))
                             } catch (e: NumberFormatException) {
                                 println("Skipping row due to number format error (simple parse): ${simpleParts.joinToString()}")
@@ -97,7 +115,13 @@ object DataSource {
                         try {
                             lat = partsAfterAddress[0].toDouble()
                             lng = partsAfterAddress[1].toDouble()
-                            tipo = partsAfterAddress[2]
+                            tipoString = partsAfterAddress[2]
+                            val tipo = try {
+                                ResidueType.valueOf(tipoString.lowercase())
+                            } catch (e: IllegalArgumentException) {
+                                println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
+                                ResidueType.UNKNOWN
+                            }
                             locaisColeta.add(LocalColeta(nome, endereco, lat, lng, tipo))
                         } catch (e: NumberFormatException) {
                             println("Skipping row due to number format error: ${partsAfterAddress.joinToString()}")
