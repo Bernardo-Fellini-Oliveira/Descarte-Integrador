@@ -6,7 +6,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 
 //os nomes desse enum DEVEM estar iguais aos que estão no CSV
-enum class ResidueType {
+enum class TipoResiduo {
     ecoponto,
     pilhas_baterias,
     pneus,
@@ -22,7 +22,7 @@ data class LocalColeta(
     val endereco: String,
     val lat: Double,
     val lng: Double,
-    val tipo: ResidueType
+    val tipo: TipoResiduo
 )
 
 object DataSource {
@@ -65,10 +65,10 @@ object DataSource {
                                 lng = simpleParts[3].toDouble()
                                 tipoString = simpleParts[4]
                                 val tipo = try {
-                                    ResidueType.valueOf(tipoString.lowercase())
+                                    TipoResiduo.valueOf(tipoString.lowercase())
                                 } catch (e: IllegalArgumentException) {
                                     println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
-                                    ResidueType.UNKNOWN
+                                    TipoResiduo.UNKNOWN
                                 }
                                 locaisColeta.add(LocalColeta(nome, endereco, lat, lng, tipo))
                             } catch (e: NumberFormatException) {
@@ -117,10 +117,10 @@ object DataSource {
                             lng = partsAfterAddress[1].toDouble()
                             tipoString = partsAfterAddress[2]
                             val tipo = try {
-                                ResidueType.valueOf(tipoString.lowercase())
+                                TipoResiduo.valueOf(tipoString.lowercase())
                             } catch (e: IllegalArgumentException) {
                                 println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
-                                ResidueType.UNKNOWN
+                                TipoResiduo.UNKNOWN
                             }
                             locaisColeta.add(LocalColeta(nome, endereco, lat, lng, tipo))
                         } catch (e: NumberFormatException) {
