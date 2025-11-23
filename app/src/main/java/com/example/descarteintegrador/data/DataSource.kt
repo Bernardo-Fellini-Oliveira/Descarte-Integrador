@@ -33,6 +33,10 @@ object DataSource {
         locaisColetaList = readCsvData(context)
     }
 
+    fun getLocaisColetaByType(type: TipoResiduo): List<LocalColeta> {
+        return locaisColetaList.filter { it.tipo == type }
+    }
+
     private fun readCsvData(context: Context): List<LocalColeta> {
         val locaisColeta = mutableListOf<LocalColeta>()
         try {
