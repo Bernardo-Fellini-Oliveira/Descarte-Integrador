@@ -1,9 +1,11 @@
 package com.example.descarteintegrador.data
 
 import android.content.Context
+import android.location.Location
 import com.example.descarteintegrador.R
 import java.io.BufferedReader
 import java.io.InputStreamReader
+import kotlinx.coroutines.flow.StateFlow
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
@@ -47,13 +49,30 @@ data class LocalColeta(
 object DataSource {
 
     lateinit var locaisColetaList: List<LocalColeta>
+    private lateinit var locationService: LocationService
 
     fun loadLocaisColeta(context: Context) {
         locaisColetaList = readCsvData(context)
+        locationService = LocationService(context)
     }
 
     fun getLocaisColetaByType(type: TipoResiduo): List<LocalColeta> {
         return locaisColetaList.filter { it.tipo == type }
+    }
+
+    // New function to expose the current device location
+    fun getCurrentDeviceLocation(): StateFlow<Location?> {
+        return locationService.currentLocation
+    }
+
+    // Function to start location updates
+    fun startLocationUpdates() {
+        locationService.startLocationUpdates()
+    }
+
+    // Function to stop location updates
+    fun stopLocationUpdates() {
+        locationService.stopLocationUpdates()
     }
 
     private fun readCsvData(context: Context): List<LocalColeta> {
