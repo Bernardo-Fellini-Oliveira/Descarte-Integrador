@@ -4,6 +4,10 @@ import android.content.Context
 import com.example.descarteintegrador.R
 import java.io.BufferedReader
 import java.io.InputStreamReader
+import kotlin.math.atan2
+import kotlin.math.cos
+import kotlin.math.sin
+import kotlin.math.sqrt
 
 //os nomes desse enum DEVEM estar iguais aos que estão no CSV
 enum class TipoResiduo {
@@ -23,7 +27,22 @@ data class LocalColeta(
     val lat: Double,
     val lng: Double,
     val tipo: TipoResiduo
-)
+){
+    fun calcularDistancia(targetLat: Double, targetLng: Double): Double {
+        val earthRadius = 6371000.0 // Earth's mean radius in meters
+
+        val dLat = Math.toRadians(targetLat - this.lat)
+        val dLng = Math.toRadians(targetLng - this.lng)
+
+        val a = sin(dLat / 2) * sin(dLat / 2) +
+                cos(Math.toRadians(this.lat)) * cos(Math.toRadians(targetLat)) *
+                sin(dLng / 2) * sin(dLng / 2)
+
+        val c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+        return earthRadius * c
+    }
+}
 
 object DataSource {
 
