@@ -20,7 +20,7 @@ enum class TipoResiduo {
     gesso,
     vidro,
     oleo,
-    UNKNOWN // Add an UNKNOWN type for handling unparsable or new types
+    UNKNOWN // para lidar com tipos com erro de escrita
 }
 
 data class LocalColeta(
@@ -30,8 +30,10 @@ data class LocalColeta(
     val lng: Double,
     val tipo: TipoResiduo
 ){
+
+    //calcula distância entre dois pares de coordenadas usando a fórmula de Haversine, retorna a distância em metros
     fun calcularDistancia(targetLat: Double, targetLng: Double): Double {
-        val earthRadius = 6371000.0 // Earth's mean radius in meters
+        val earthRadius = 6371000.0
 
         val dLat = Math.toRadians(targetLat - this.lat)
         val dLng = Math.toRadians(targetLng - this.lng)
@@ -76,27 +78,22 @@ object DataSource {
         currentLng: Double,
         radiusKm: Double
     ): List<LocalColeta> {
-        // First, filter the entire list by the specified residue type
         val filteredByType = locaisColetaList.filter { it.tipo == type }
 
-        // Then, filter this already type-filtered list by distance
-        val radiusMeters = radiusKm * 1000 // Convert km to meters
+        val radiusMeters = radiusKm * 1000
         return filteredByType.filter { localColeta ->
             localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
         }
     }
 
-    // New function to expose the current device location
+    // função para expor a localização atual do dispositivo
     fun getCurrentDeviceLocation(): StateFlow<Location?> {
         return locationService.currentLocation
     }
 
-    // Function to start location updates
     fun startLocationUpdates() {
         locationService.startLocationUpdates()
     }
-
-    // Function to stop location updates
     fun stopLocationUpdates() {
         locationService.stopLocationUpdates()
     }
@@ -108,7 +105,7 @@ object DataSource {
             val reader = BufferedReader(InputStreamReader(inputStream))
             var line: String?
 
-            // Skip the header row if your CSV has one
+            // Pula linha de cabeçalho se tiver
             reader.readLine() 
 
             while (reader.readLine().also { line = it } != null) {
@@ -117,13 +114,13 @@ object DataSource {
                     val endereco: String
                     val lat: Double
                     val lng: Double
-                    val tipoString: String // Temporarily read as String
+                    val tipoString: String // convertido depois pra TipoResiduo
 
-                    // Find the start of the quoted address field
+                    // Encontra o início do campo de endereço entre aspas
                     val firstQuoteIndex = rawLine.indexOf('"')
 
                     if (firstQuoteIndex == -1) {
-                        // No quoted field, assume simple comma separation
+                        // se não tem campo com aspas, assume separação simples por vírgula
                         val simpleParts = rawLine.split(",").map { it.trim() }
                         if (simpleParts.size >= 5) {
                             try {
@@ -146,10 +143,10 @@ object DataSource {
                         } else {
                             println("Skipping row due to insufficient columns (simple parse): ${simpleParts.joinToString()}")
                         }
-                        return@let // Continue to next line
+                        return@let // Continua para a próxima linha
                     }
 
-                    // Extrair 'nome'
+                    // Extrai nome
                     val commaBeforeQuote = rawLine.substring(0, firstQuoteIndex).lastIndexOf(',')
                     if (commaBeforeQuote != -1) {
                         nome = rawLine.substring(0, commaBeforeQuote).trim()
@@ -158,18 +155,17 @@ object DataSource {
                         return@let
                     }
 
-                    // Find the end of the quoted address field
-                    // Start searching from after the first quote
+                    // Encontra o fim do campo de endereço entre aspas, começa a procurar depois da primeira aspa
                     val endQuoteIndex = rawLine.indexOf('"', firstQuoteIndex + 1)
                     if (endQuoteIndex == -1) {
                         println("Skipping row due to missing closing quote for address: $rawLine")
                         return@let
                     }
 
-                    // Extract 'endereco' (without quotes)
+                    // Extrai endereco sem aspas
                     endereco = rawLine.substring(firstQuoteIndex + 1, endQuoteIndex).trim()
 
-                    // Extract the remaining parts (lat, lng, tipo)
+                    // Extrai as partes restantes
 
                     val remainingString = rawLine.substring(endQuoteIndex + 1).trim()
                     
@@ -179,7 +175,7 @@ object DataSource {
                         remainingString.split(",").map { it.trim() }
                     }
 
-                    if (partsAfterAddress.size >= 3) { // Expecting lat, lng, tipo
+                    if (partsAfterAddress.size >= 3) { // Esperando lat, lng, tipo
                         try {
                             lat = partsAfterAddress[0].toDouble()
                             lng = partsAfterAddress[1].toDouble()
@@ -203,7 +199,6 @@ object DataSource {
             reader.close()
             inputStream.close()
 
-            // Agora 'locaisColeta' contém todos os objetos LocalColeta do CSV.
             println("Locais de Coleta lidos: ${locaisColeta.size}")
 
         } catch (e: Exception) {

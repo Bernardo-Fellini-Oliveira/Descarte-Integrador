@@ -27,33 +27,33 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        // Initialize the permission launcher
+        // Inicializa o lançador de permissões
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
             permissions ->
             val fineLocationGranted = permissions[Manifest.permission.ACCESS_FINE_LOCATION] ?: false
             val coarseLocationGranted = permissions[Manifest.permission.ACCESS_COARSE_LOCATION] ?: false
 
             if (fineLocationGranted || coarseLocationGranted) {
-                Log.d(TAG, "Location permissions granted. Starting updates.")
+                Log.d(TAG, "Permissões de localização concedidas. Iniciando atualizações.")
                 DataSource.startLocationUpdates()
             } else {
-                Log.w(TAG, "Location permissions denied. Cannot start location updates.")
+                Log.w(TAG, "Permissões de localização negadas. Não é possível iniciar as atualizações de localização.")
             }
         }
 
-        // Request permissions when the activity is created
+        // Solicita permissões quando a atividade é criada
         requestLocationPermissions()
 
-        // Load data and initialize location service in DataSource
+        // Carrega dados e inicializa o serviço de localização no DataSource
         DataSource.loadLocaisColeta(this)
 
-        // Observe current location from DataSource and log it
+        // Observa a localização atual do DataSource e a registra
         lifecycleScope.launch {
             DataSource.getCurrentDeviceLocation().collect {
                 location ->
                 location?.let {
-                    Log.d(TAG, "Current Device Location: Lat ${it.latitude}, Lng ${it.longitude}")
-                } ?: Log.d(TAG, "Current Device Location: Not yet available.")
+                    Log.d(TAG, "Localização atual do dispositivo: Lat ${it.latitude}, Lng ${it.longitude}")
+                } ?: Log.d(TAG, "Localização atual do dispositivo: Ainda não disponível.")
             }
         }
 
@@ -72,17 +72,17 @@ class MainActivity : ComponentActivity() {
     private fun requestLocationPermissions() {
         when {
             ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED -> {
-                // Fine location permission already granted
-                Log.d(TAG, "Fine location permission already granted. Starting updates.")
+                // Permissão de localização precisa já concedida
+                Log.d(TAG, "Permissão de localização precisa já concedida. Iniciando atualizações.")
                 DataSource.startLocationUpdates()
             }
             ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED -> {
-                // Only coarse location permission granted
-                Log.d(TAG, "Coarse location permission already granted. Starting updates.")
+                // Apenas permissão de localização aproximada concedida
+                Log.d(TAG, "Permissão de localização aproximada já concedida. Iniciando atualizações.")
                 DataSource.startLocationUpdates()
             }
             else -> {
-                // Request both permissions
+                // Solicita ambas as permissões
                 permissionLauncher.launch(arrayOf(
                     Manifest.permission.ACCESS_FINE_LOCATION,
                     Manifest.permission.ACCESS_COARSE_LOCATION
@@ -94,7 +94,7 @@ class MainActivity : ComponentActivity() {
     override fun onDestroy() {
         super.onDestroy()
         DataSource.stopLocationUpdates()
-        Log.d(TAG, "Location updates stopped on activity destruction.")
+        Log.d(TAG, "Atualizações de localização interrompidas na destruição da atividade.")
     }
 }
 
