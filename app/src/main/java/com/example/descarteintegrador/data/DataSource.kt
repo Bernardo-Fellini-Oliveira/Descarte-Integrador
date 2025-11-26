@@ -56,13 +56,32 @@ object DataSource {
         locationService = LocationService(context)
     }
 
+    // Retorna uma lista de locais de coleta filtrada por tipo de resíduo
     fun getLocaisColetaByType(type: TipoResiduo): List<LocalColeta> {
         return locaisColetaList.filter { it.tipo == type }
     }
 
+    // Retorna uma lista de locais de coleta filtrada por distância
     fun getLocaisColetaInRadius(currentLat: Double, currentLng: Double, radiusKm: Double): List<LocalColeta> {
         val radiusMeters = radiusKm * 1000 // Convert km to meters
         return locaisColetaList.filter { localColeta ->
+            localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
+        }
+    }
+
+    // Retorna uma lista filtrada por tipo de resíduo e distância, pronta para exibir no frontend
+    fun getLocaisColetaFiltered(
+        type: TipoResiduo,
+        currentLat: Double,
+        currentLng: Double,
+        radiusKm: Double
+    ): List<LocalColeta> {
+        // First, filter the entire list by the specified residue type
+        val filteredByType = locaisColetaList.filter { it.tipo == type }
+
+        // Then, filter this already type-filtered list by distance
+        val radiusMeters = radiusKm * 1000 // Convert km to meters
+        return filteredByType.filter { localColeta ->
             localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
         }
     }
