@@ -60,6 +60,13 @@ object DataSource {
         return locaisColetaList.filter { it.tipo == type }
     }
 
+    fun getLocaisColetaInRadius(currentLat: Double, currentLng: Double, radiusKm: Double): List<LocalColeta> {
+        val radiusMeters = radiusKm * 1000 // Convert km to meters
+        return locaisColetaList.filter { localColeta ->
+            localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
+        }
+    }
+
     // New function to expose the current device location
     fun getCurrentDeviceLocation(): StateFlow<Location?> {
         return locationService.currentLocation
