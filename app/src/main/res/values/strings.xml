@@ -4,7 +4,7 @@
     <string name="symbol_description">Imagem Símbolo Localização</string>
     <string name="localization">Localização:</string>
     <string name="change_localization">Mudar localização</string>
-    <string name="destination">Postos de destinação para %s</string>
+    <string name="destination">Postos de destinação para %s:</string>
     <string name="destination_found">Encontramos %s postos em um raio de 10km</string>
     <string name="change_material">Mudar Material</string>
     <string name="disclaimer">Atenção, sempre recomendamos entrar em contato com o posto por conta antes de descartar. Confirme por telefone ou email as condições e horários de coleta.</string>
@@ -20,4 +20,10 @@
     <string name="choose_local">Local de descarte</string>
     <string name="choose_time">Data/Horário da coleta</string>
     <string name="confirm">Confirmar</string>
+    <string name="orange_hex">#FF7000</string>
+    <string name="dark_orange_hex">#FF4000</string>
+    <string name="dark_grey_hex">#BBBBBB</string>
+    <string name="grey_hex">#333333</string>
+    <string name="descarte">Descarte</string>
+    <string name="integrador">Integrador</string>
 </resources>
