@@ -2,53 +2,59 @@ package com.example.descarteintegrador.data
 
 import android.content.Context
 import android.location.Location
+import android.util.Log
 import com.example.descarteintegrador.R
 import java.io.BufferedReader
+import java.io.File
 import java.io.InputStreamReader
 import kotlinx.coroutines.flow.StateFlow
+import kotlin.collections.filter
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-//os nomes desse enum DEVEM estar iguais aos que estão no CSV
-enum class TipoResiduo {
-    ecoponto,
-    pilhas_baterias,
-    pneus,
-    lampadas,
-    gesso,
-    vidro,
-    oleo,
-    UNKNOWN // para lidar com tipos com erro de escrita
-}
-
-data class LocalColeta(
-    val nome: String,
-    val endereco: String,
-    val lat: Double,
-    val lng: Double,
-    val tipo: TipoResiduo
-){
-
-    //calcula distância entre dois pares de coordenadas usando a fórmula de Haversine, retorna a distância em metros
-    fun calcularDistancia(targetLat: Double, targetLng: Double): Double {
-        val earthRadius = 6371000.0
-
-        val dLat = Math.toRadians(targetLat - this.lat)
-        val dLng = Math.toRadians(targetLng - this.lng)
-
-        val a = sin(dLat / 2) * sin(dLat / 2) +
-                cos(Math.toRadians(this.lat)) * cos(Math.toRadians(targetLat)) *
-                sin(dLng / 2) * sin(dLng / 2)
-
-        val c = 2 * atan2(sqrt(a), sqrt(1 - a))
-
-        return earthRadius * c
-    }
-}
-
 object DataSource {
+    private const val TAG = "DataSource"
+    private const val SUGESTAO_MATERIAL_FILENAME = "sugestoes_materiais.txt"
+    private const val SUGESTAO_LOCAL_FILENAME = "sugestoes_locais.txt"
+
+    //os nomes desse enum DEVEM estar iguais aos que estão no CSV
+    enum class TipoResiduo {
+        ecoponto,
+        pilhas_baterias,
+        pneus,
+        lampadas,
+        gesso,
+        vidro,
+        oleo,
+        UNKNOWN // para lidar com tipos com erro de escrita
+    }
+
+    data class LocalColeta(
+        val nome: String,
+        val endereco: String,
+        val lat: Double,
+        val lng: Double,
+        val tipo: TipoResiduo
+    ){
+
+        //calcula distância entre dois pares de coordenadas usando a fórmula de Haversine, retorna a distância em metros
+        fun calcularDistancia(targetLat: Double, targetLng: Double): Double {
+            val earthRadius = 6371000.0
+
+            val dLat = Math.toRadians(targetLat - this.lat)
+            val dLng = Math.toRadians(targetLng - this.lng)
+
+            val a = sin(dLat / 2) * sin(dLat / 2) +
+                    cos(Math.toRadians(this.lat)) * cos(Math.toRadians(targetLat)) *
+                    sin(dLng / 2) * sin(dLng / 2)
+
+            val c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+            return earthRadius * c
+        }
+    }
 
     lateinit var locaisColetaList: List<LocalColeta>
     private lateinit var locationService: LocationService
@@ -78,12 +84,16 @@ object DataSource {
         currentLng: Double,
         radiusKm: Double
     ): List<LocalColeta> {
-        val filteredByType = locaisColetaList.filter { it.tipo == type }
+        val filteredByType = if (type == TipoResiduo.ecoponto) {
+            locaisColetaList.filter { it.tipo == TipoResiduo.ecoponto }
+        } else {
+            locaisColetaList.filter { it.tipo == type || it.tipo == TipoResiduo.ecoponto }
+        }
 
         val radiusMeters = radiusKm * 1000
         return filteredByType.filter { localColeta ->
             localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
-        }
+        }.sortedBy { it.calcularDistancia(currentLat, currentLng) }
     }
 
     // função para expor a localização atual do dispositivo
@@ -98,6 +108,31 @@ object DataSource {
         locationService.stopLocationUpdates()
     }
 
+
+    // Salva uma sugestão de novo material em um arquivo de texto.
+    fun salvarSugestaoMaterial(context: Context, material: String) {
+        try {
+            val file = File(context.filesDir, SUGESTAO_MATERIAL_FILENAME)
+            file.appendText("$material\n")
+            Log.d(TAG, "Sugestão de material '$material' salva em ${file.absolutePath}")
+        } catch (e: Exception) {
+            Log.e(TAG, "Falha ao salvar sugestão de material", e)
+        }
+    }
+
+
+    // Salva uma sugestão de novo local em um arquivo de texto.
+    fun salvarSugestaoLocal(context: Context, endereco: String, numero: String) {
+        try {
+            val file = File(context.filesDir, SUGESTAO_LOCAL_FILENAME)
+            val linha = "Endereço: $endereco, Número: $numero"
+            file.appendText("$linha\n")
+            Log.d(TAG, "Sugestão de local '$linha' salva em ${file.absolutePath}")
+        } catch (e: Exception) {
+            Log.e(TAG, "Falha ao salvar sugestão de local", e)
+        }
+    }
+
     private fun readCsvData(context: Context): List<LocalColeta> {
         val locaisColeta = mutableListOf<LocalColeta>()
         try {
@@ -106,7 +141,7 @@ object DataSource {
             var line: String?
 
             // Pula linha de cabeçalho se tiver
-            reader.readLine() 
+            reader.readLine()
 
             while (reader.readLine().also { line = it } != null) {
                 line?.let { rawLine ->
@@ -168,7 +203,7 @@ object DataSource {
                     // Extrai as partes restantes
 
                     val remainingString = rawLine.substring(endQuoteIndex + 1).trim()
-                    
+
                     val partsAfterAddress = if (remainingString.startsWith(",")) {
                         remainingString.substring(1).split(",").map { it.trim() }
                     } else {
