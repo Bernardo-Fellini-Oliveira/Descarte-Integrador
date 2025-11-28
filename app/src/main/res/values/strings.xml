@@ -27,7 +27,7 @@
     <string name="descarte">Descarte</string>
     <string name="integrador">Integrador</string>
     <string name="unkown">Nenhum Material Selecionado para procura</string>
-    <string name="ecopoint">Ecopontos endontrados em um raio de 10km</string>
+    <string name="ecopoint">Ecopontos encontrados em um raio de 10km</string>
     <string name="local_fail">Falha ao encontrar sua localização. Reinicie o Aplicativo e tente novamente</string>
     <string name="cancel">Cancelar</string>
     <string name="ecopoint_help">(na dúvida, selecione este)</string>
