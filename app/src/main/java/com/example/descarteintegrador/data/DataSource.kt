@@ -9,52 +9,11 @@ import java.io.File
 import java.io.InputStreamReader
 import kotlinx.coroutines.flow.StateFlow
 import kotlin.collections.filter
-import kotlin.math.atan2
-import kotlin.math.cos
-import kotlin.math.sin
-import kotlin.math.sqrt
 
 object DataSource {
     private const val TAG = "DataSource"
     private const val SUGESTAO_MATERIAL_FILENAME = "sugestoes_materiais.txt"
     private const val SUGESTAO_LOCAL_FILENAME = "sugestoes_locais.txt"
-
-    //os nomes desse enum DEVEM estar iguais aos que estão no CSV
-    enum class TipoResiduo {
-        ecoponto,
-        pilhas_baterias,
-        pneus,
-        lampadas,
-        gesso,
-        vidro,
-        oleo,
-        UNKNOWN // para lidar com tipos com erro de escrita
-    }
-
-    data class LocalColeta(
-        val nome: String,
-        val endereco: String,
-        val lat: Double,
-        val lng: Double,
-        val tipo: TipoResiduo
-    ){
-
-        //calcula distância entre dois pares de coordenadas usando a fórmula de Haversine, retorna a distância em metros
-        fun calcularDistancia(targetLat: Double, targetLng: Double): Double {
-            val earthRadius = 6371000.0
-
-            val dLat = Math.toRadians(targetLat - this.lat)
-            val dLng = Math.toRadians(targetLng - this.lng)
-
-            val a = sin(dLat / 2) * sin(dLat / 2) +
-                    cos(Math.toRadians(this.lat)) * cos(Math.toRadians(targetLat)) *
-                    sin(dLng / 2) * sin(dLng / 2)
-
-            val c = 2 * atan2(sqrt(a), sqrt(1 - a))
-
-            return earthRadius * c
-        }
-    }
 
     lateinit var locaisColetaList: List<LocalColeta>
     private lateinit var locationService: LocationService
@@ -170,7 +129,7 @@ object DataSource {
                                     println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
                                     TipoResiduo.UNKNOWN
                                 }
-                                locaisColeta.add(LocalColeta(nome, endereco, lat, lng, tipo))
+                                locaisColeta.add(LocalColeta(nome = nome, endereco = endereco, lat = lat, lng = lng, tipo = tipo))
                             } catch (e: NumberFormatException) {
                                 println("Skipping row due to number format error (simple parse): ${simpleParts.joinToString()}")
                                 e.printStackTrace()
@@ -179,6 +138,13 @@ object DataSource {
                             println("Skipping row due to insufficient columns (simple parse): ${simpleParts.joinToString()}")
                         }
                         return@let // Continua para a próxima linha
+                    }
+
+                    // Encontra o fim do campo de endereço entre aspas, começa a procurar depois da primeira aspa
+                    val endQuoteIndex = rawLine.indexOf('"', firstQuoteIndex + 1)
+                    if (endQuoteIndex == -1) {
+                        println("Skipping row due to missing closing quote for address: $rawLine")
+                        return@let
                     }
 
                     // Extrai nome
@@ -190,18 +156,10 @@ object DataSource {
                         return@let
                     }
 
-                    // Encontra o fim do campo de endereço entre aspas, começa a procurar depois da primeira aspa
-                    val endQuoteIndex = rawLine.indexOf('"', firstQuoteIndex + 1)
-                    if (endQuoteIndex == -1) {
-                        println("Skipping row due to missing closing quote for address: $rawLine")
-                        return@let
-                    }
-
                     // Extrai endereco sem aspas
                     endereco = rawLine.substring(firstQuoteIndex + 1, endQuoteIndex).trim()
 
                     // Extrai as partes restantes
-
                     val remainingString = rawLine.substring(endQuoteIndex + 1).trim()
 
                     val partsAfterAddress = if (remainingString.startsWith(",")) {
@@ -221,7 +179,7 @@ object DataSource {
                                 println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
                                 TipoResiduo.UNKNOWN
                             }
-                            locaisColeta.add(LocalColeta(nome, endereco, lat, lng, tipo))
+                            locaisColeta.add(LocalColeta(nome = nome, endereco = endereco, lat = lat, lng = lng, tipo = tipo))
                         } catch (e: NumberFormatException) {
                             println("Skipping row due to number format error: ${partsAfterAddress.joinToString()}")
                             e.printStackTrace()
