@@ -14,15 +14,37 @@ import com.example.descarteintegrador.ui.theme.DescarteIntegradorTheme
 import android.util.Log
 import androidx.core.content.ContextCompat
 import com.example.descarteintegrador.data.DataSource
+import androidx.room.Room
+import com.example.descarteintegrador.data.LocalColetaDatabase
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     private val TAG = "MainActivity"
 
     private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
+    private lateinit var db: LocalColetaDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        // Initialize Room Database
+        db = Room.databaseBuilder(
+            applicationContext,
+            LocalColetaDatabase::class.java,
+            "local_coleta_database"
+        ).build()
+        val localColetaDao = db.localColetaDao()
+
+        // Initialize DataSource with DAO and context
+        DataSource.initialize(localColetaDao, this)
+
+        // Load data from CSV into DB (if empty) in a coroutine
+        CoroutineScope(Dispatchers.IO).launch {
+            DataSource.loadLocaisColeta(this@MainActivity)
+        }
 
         // Inicializa o lançador de permissões
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
@@ -37,9 +59,6 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        // Carrega os dados do CSV e inicializa o serviço de localização no DataSource
-        DataSource.loadLocaisColeta(this)
-
         // Solicita permissões, o que por sua vez iniciará as atualizações de localização se concedidas
         requestLocationPermissions()
 
@@ -49,7 +68,9 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        Log.d(TAG, "Total de Locais de Coleta carregados: ${DataSource.locaisColetaList.size}")
+        // Removed the direct access to DataSource.locaisColetaList.size
+        // The data is now managed by the database and observed via Flows.
+        Log.d(TAG, "MainActivity onCreate completed. Data loading is handled by DataSource.")
     }
 
     private fun requestLocationPermissions() {

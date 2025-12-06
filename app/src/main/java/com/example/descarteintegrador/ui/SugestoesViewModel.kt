@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import com.example.descarteintegrador.data.DataSource
 import com.example.descarteintegrador.data.DialogType
 import com.example.descarteintegrador.data.SugestoesUiState
+import com.example.descarteintegrador.data.TipoResiduo // Added this import
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -53,7 +54,7 @@ class SugestoesViewModel(application: Application) : AndroidViewModel(applicatio
         val materialSugerido = _uiState.value.sugestaoMaterial.trim()
 
         // Verifica se o material já existe (comparação case-insensitive)
-        val existe = DataSource.TipoResiduo.values().any {
+        val existe = TipoResiduo.values().any { // Updated reference
             it.name.equals(materialSugerido.replace(" ", "_"), ignoreCase = true)
         }
 

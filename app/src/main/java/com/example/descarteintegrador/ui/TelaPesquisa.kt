@@ -34,13 +34,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.graphics.toColorInt
 import com.example.descarteintegrador.R
-import com.example.descarteintegrador.data.DataSource
 import com.example.descarteintegrador.data.PesquisaUiState
+import com.example.descarteintegrador.data.TipoResiduo // Added import
+import com.example.descarteintegrador.data.LocalColeta // Added import
 import com.example.descarteintegrador.ui.components.BotaoComTexto
 import com.example.descarteintegrador.ui.theme.DescarteIntegradorTheme
 
 @Composable
-fun LocalDeDescarte(localDeDescarte: DataSource.LocalColeta, localizacao: Location, modifier: Modifier = Modifier) {
+fun LocalDeDescarte(localDeDescarte: LocalColeta, localizacao: Location, modifier: Modifier = Modifier) { // Updated reference
     Card(
         modifier = modifier
             .fillMaxWidth(),
@@ -99,7 +100,7 @@ fun TelaPesquisa(
     cliqueSugestao: () -> Unit,
     cliqueTransporte: () -> Unit,
     uiState: PesquisaUiState,
-    onMaterialChange: (DataSource.TipoResiduo) -> Unit,
+    onMaterialChange: (TipoResiduo) -> Unit, // Updated reference
     onOpenDialog: () -> Unit,
     onDismissDialog: () -> Unit
 ) {
@@ -194,8 +195,8 @@ fun TelaPesquisa(
                 Column {
                     Text(
                         text = when(uiState.material) {
-                            DataSource.TipoResiduo.UNKNOWN -> stringResource(R.string.unkown)
-                            DataSource.TipoResiduo.ecoponto -> stringResource(R.string.ecopoint)
+                            TipoResiduo.UNKNOWN -> stringResource(R.string.unkown) // Updated reference
+                            TipoResiduo.ecoponto -> stringResource(R.string.ecopoint) // Updated reference
                             else -> stringResource(R.string.destination, uiState.material.name.replaceFirstChar { it.titlecase() })
                         },
                         fontWeight = FontWeight.Bold,
@@ -203,7 +204,7 @@ fun TelaPesquisa(
                     )
                     Text(
                         text = when(uiState.material) {
-                            DataSource.TipoResiduo.UNKNOWN -> ""
+                            TipoResiduo.UNKNOWN -> "" // Updated reference
                             else -> stringResource(R.string.destination_found, uiState.totalDeLocais.toString())},
                         color = Color(greyHex.toColorInt())
                     )
@@ -303,16 +304,16 @@ fun TelaPesquisa(
 // Um AlertDialog que mostra a lista de materiais para seleção.
 @Composable
 fun MaterialSelectionDialog(
-    currentMaterial: DataSource.TipoResiduo,
+    currentMaterial: TipoResiduo, // Updated reference
     onDismiss: () -> Unit,
-    onMaterialSelected: (DataSource.TipoResiduo) -> Unit,
+    onMaterialSelected: (TipoResiduo) -> Unit, // Updated reference
     modifier: Modifier = Modifier
 ) {
     // Estado temporário para a seleção dentro do diálogo
     var selectedOption by remember { mutableStateOf(currentMaterial) }
 
-    val materialOptions = DataSource.TipoResiduo.values().filter {
-        it != DataSource.TipoResiduo.UNKNOWN
+    val materialOptions = TipoResiduo.values().filter { // Updated reference
+        it != TipoResiduo.UNKNOWN // Updated reference
     }
 
     AlertDialog(
@@ -341,7 +342,7 @@ fun MaterialSelectionDialog(
 
                         Column {
                             Text(text = material.name.replaceFirstChar { it.titlecase() })
-                            if (material == DataSource.TipoResiduo.ecoponto) {
+                            if (material == TipoResiduo.ecoponto) { // Updated reference
                                 Text(
                                     text = stringResource(R.string.ecopoint_help),
                                     fontSize = 12.sp,

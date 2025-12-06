@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.descarteintegrador.data.DataSource
 import com.example.descarteintegrador.data.PesquisaUiState
+import com.example.descarteintegrador.data.TipoResiduo // Added this import
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -32,7 +33,7 @@ class PesquisaViewModel : ViewModel() {
     /**
      * Atualiza o tipo de material a ser filtrado.
      */
-    fun setMaterial(tipo: DataSource.TipoResiduo) {
+    fun setMaterial(tipo: TipoResiduo) { // Updated reference
         _pesquisaUiState.update { currentState ->
             currentState.copy(material = tipo)
         }
@@ -52,7 +53,7 @@ class PesquisaViewModel : ViewModel() {
         _pesquisaUiState.update { it.copy(isMaterialSelectionDialogOpen = false) }
     }
 
-    private fun updateFilteredLocations(location: Location?, material: DataSource.TipoResiduo) {
+    private fun updateFilteredLocations(location: Location?, material: TipoResiduo) { // Updated reference
         if (location == null) {
             _pesquisaUiState.update { currentState ->
                 currentState.copy(
@@ -64,20 +65,22 @@ class PesquisaViewModel : ViewModel() {
             return
         }
 
-        val filteredList = DataSource.getLocaisColetaFiltered(
-            type = material,
-            currentLat = location.latitude,
-            currentLng = location.longitude,
-            radiusKm = 10.0
-        )
-
-        _pesquisaUiState.update { currentState ->
-            currentState.copy(
-                locaisFiltrados = filteredList,
-                isLocationAvailable = true,
-                totalDeLocais = filteredList.size,
-                currentLocation = location
-            )
+        viewModelScope.launch { // Launched a coroutine for suspend function call
+            DataSource.getLocaisColetaFiltered(
+                type = material,
+                currentLat = location.latitude,
+                currentLng = location.longitude,
+                radiusKm = 10.0
+            ).collect { filteredList ->
+                _pesquisaUiState.update { currentState ->
+                    currentState.copy(
+                        locaisFiltrados = filteredList,
+                        isLocationAvailable = true,
+                        totalDeLocais = filteredList.size,
+                        currentLocation = location
+                    )
+                }
+            }
         }
     }
 }

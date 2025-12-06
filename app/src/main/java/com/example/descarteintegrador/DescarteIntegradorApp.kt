@@ -15,6 +15,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.descarteintegrador.data.ScreenTransitions
+import com.example.descarteintegrador.data.TipoResiduo // Added this import
 import com.example.descarteintegrador.ui.PesquisaViewModel
 import com.example.descarteintegrador.ui.TelaPesquisa
 import com.example.descarteintegrador.ui.TelaSugestoes

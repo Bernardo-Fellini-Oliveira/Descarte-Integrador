@@ -7,32 +7,56 @@ import com.example.descarteintegrador.R
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.flow.StateFlow
-import kotlin.collections.filter
 
 object DataSource {
     private const val TAG = "DataSource"
     private const val SUGESTAO_MATERIAL_FILENAME = "sugestoes_materiais.txt"
     private const val SUGESTAO_LOCAL_FILENAME = "sugestoes_locais.txt"
 
-    lateinit var locaisColetaList: List<LocalColeta>
+    private lateinit var localColetaDao: LocalColetaDao // Add DAO reference
     private lateinit var locationService: LocationService
 
-    fun loadLocaisColeta(context: Context) {
-        locaisColetaList = readCsvData(context)
+    fun initialize(dao: LocalColetaDao, context: Context) { // New initialization function
+        localColetaDao = dao
         locationService = LocationService(context)
     }
 
+    suspend fun loadLocaisColeta(context: Context) { // Make it suspend
+        // Check if database is empty
+        val count = withContext(Dispatchers.IO) { localColetaDao.getLocaisCount().first() } // Assuming a getLocaisCount() in DAO
+        if (count == 0) {
+            val locaisColeta = readCsvData(context)
+            locaisColeta.forEach { local ->
+                localColetaDao.insert(local)
+            }
+        }
+    }
+
     // Retorna uma lista de locais de coleta filtrada por tipo de resíduo
-    fun getLocaisColetaByType(type: TipoResiduo): List<LocalColeta> {
-        return locaisColetaList.filter { it.tipo == type }
+    // This will now return Flow<List<LocalColeta>> directly from the DAO
+    fun getLocaisColetaByType(type: TipoResiduo): Flow<List<LocalColeta>> {
+        return if (type == TipoResiduo.ecoponto) {
+            localColetaDao.getAllLocais().map { list -> list.filter { it.tipo == TipoResiduo.ecoponto } }
+        } else {
+            localColetaDao.getLocaisByType(type.name.lowercase()).map { list ->
+                list.filter { it.tipo == type || it.tipo == TipoResiduo.ecoponto }
+            }
+        }
     }
 
     // Retorna uma lista de locais de coleta filtrada por distância
-    fun getLocaisColetaInRadius(currentLat: Double, currentLng: Double, radiusKm: Double): List<LocalColeta> {
+    fun getLocaisColetaInRadius(currentLat: Double, currentLng: Double, radiusKm: Double): Flow<List<LocalColeta>> {
         val radiusMeters = radiusKm * 1000 // Convert km to meters
-        return locaisColetaList.filter { localColeta ->
-            localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
+        return localColetaDao.getAllLocais().map { list ->
+            list.filter { localColeta ->
+                localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
+            }
         }
     }
 
@@ -42,20 +66,21 @@ object DataSource {
         currentLat: Double,
         currentLng: Double,
         radiusKm: Double
-    ): List<LocalColeta> {
-        val filteredByType = if (type == TipoResiduo.ecoponto) {
-            locaisColetaList.filter { it.tipo == TipoResiduo.ecoponto }
-        } else {
-            locaisColetaList.filter { it.tipo == type || it.tipo == TipoResiduo.ecoponto }
-        }
-
+    ): Flow<List<LocalColeta>> {
         val radiusMeters = radiusKm * 1000
-        return filteredByType.filter { localColeta ->
-            localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
-        }.sortedBy { it.calcularDistancia(currentLat, currentLng) }
+        return localColetaDao.getAllLocais().map { allLocais ->
+            val filteredByType = if (type == TipoResiduo.ecoponto) {
+                allLocais.filter { it.tipo == TipoResiduo.ecoponto }
+            } else {
+                allLocais.filter { it.tipo == type || it.tipo == TipoResiduo.ecoponto }
+            }
+
+            filteredByType.filter { localColeta ->
+                localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
+            }.sortedBy { it.calcularDistancia(currentLat, currentLng) }
+        }
     }
 
-    // função para expor a localização atual do dispositivo
     fun getCurrentDeviceLocation(): StateFlow<Location?> {
         return locationService.currentLocation
     }
@@ -67,13 +92,12 @@ object DataSource {
         locationService.stopLocationUpdates()
     }
 
-
     // Salva uma sugestão de novo material em um arquivo de texto.
     fun salvarSugestaoMaterial(context: Context, material: String) {
         try {
             val file = File(context.filesDir, SUGESTAO_MATERIAL_FILENAME)
-            file.appendText("$material\n")
-            Log.d(TAG, "Sugestão de material '$material' salva em ${file.absolutePath}")
+            file.appendText("${material}" + System.lineSeparator())
+            Log.d(TAG, "Sugestão de material '${material}' salva em ${file.absolutePath}")
         } catch (e: Exception) {
             Log.e(TAG, "Falha ao salvar sugestão de material", e)
         }
@@ -84,14 +108,15 @@ object DataSource {
     fun salvarSugestaoLocal(context: Context, endereco: String, numero: String) {
         try {
             val file = File(context.filesDir, SUGESTAO_LOCAL_FILENAME)
-            val linha = "Endereço: $endereco, Número: $numero"
-            file.appendText("$linha\n")
-            Log.d(TAG, "Sugestão de local '$linha' salva em ${file.absolutePath}")
+            val linha = "Endereço: ${endereco}, Número: ${numero}"
+            file.appendText("${linha}" + System.lineSeparator())
+            Log.d(TAG, "Sugestão de local '${linha}' salva em ${file.absolutePath}")
         } catch (e: Exception) {
             Log.e(TAG, "Falha ao salvar sugestão de local", e)
         }
     }
 
+    // The readCsvData now returns List<LocalColeta> so loadLocaisColeta can insert them
     private fun readCsvData(context: Context): List<LocalColeta> {
         val locaisColeta = mutableListOf<LocalColeta>()
         try {
@@ -126,7 +151,7 @@ object DataSource {
                                 val tipo = try {
                                     TipoResiduo.valueOf(tipoString.lowercase())
                                 } catch (e: IllegalArgumentException) {
-                                    println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
+                                    println("Unknown residue type: ${tipoString}. Assigning UNKNOWN.")
                                     TipoResiduo.UNKNOWN
                                 }
                                 locaisColeta.add(LocalColeta(nome = nome, endereco = endereco, lat = lat, lng = lng, tipo = tipo))
@@ -143,7 +168,7 @@ object DataSource {
                     // Encontra o fim do campo de endereço entre aspas, começa a procurar depois da primeira aspa
                     val endQuoteIndex = rawLine.indexOf('"', firstQuoteIndex + 1)
                     if (endQuoteIndex == -1) {
-                        println("Skipping row due to missing closing quote for address: $rawLine")
+                        println("Skipping row due to missing closing quote for address: ${rawLine}")
                         return@let
                     }
 
@@ -152,7 +177,7 @@ object DataSource {
                     if (commaBeforeQuote != -1) {
                         nome = rawLine.substring(0, commaBeforeQuote).trim()
                     } else {
-                        println("Skipping row due to malformed 'nome' field: $rawLine")
+                        println("Skipping row due to malformed 'nome' field: ${rawLine}")
                         return@let
                     }
 
@@ -176,7 +201,7 @@ object DataSource {
                             val tipo = try {
                                 TipoResiduo.valueOf(tipoString.lowercase())
                             } catch (e: IllegalArgumentException) {
-                                println("Unknown residue type: $tipoString. Assigning UNKNOWN.")
+                                println("Unknown residue type: ${tipoString}. Assigning UNKNOWN.")
                                 TipoResiduo.UNKNOWN
                             }
                             locaisColeta.add(LocalColeta(nome = nome, endereco = endereco, lat = lat, lng = lng, tipo = tipo))
