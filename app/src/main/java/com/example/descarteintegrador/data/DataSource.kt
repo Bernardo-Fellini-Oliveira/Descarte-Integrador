@@ -14,6 +14,15 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.flow.StateFlow
 
+import kotlinx.serialization.*
+import kotlinx.serialization.json.Json
+
+@Serializable
+data class JsonDataWrapper(
+    val version: Long,
+    val locaisColeta: List<LocalColeta>
+)
+
 object DataSource {
     private const val TAG = "DataSource"
     private const val SUGESTAO_MATERIAL_FILENAME = "sugestoes_materiais.txt"
@@ -31,7 +40,7 @@ object DataSource {
         // Check if database is empty
         val count = withContext(Dispatchers.IO) { localColetaDao.getLocaisCount().first() } // Assuming a getLocaisCount() in DAO
         if (count == 0) {
-            val locaisColeta = readCsvData(context)
+            val locaisColeta = readJsonData(context) // Changed to readJsonData
             locaisColeta.forEach { local ->
                 localColetaDao.insert(local)
             }
@@ -116,112 +125,32 @@ object DataSource {
         }
     }
 
-    // The readCsvData now returns List<LocalColeta> so loadLocaisColeta can insert them
-    private fun readCsvData(context: Context): List<LocalColeta> {
-        val locaisColeta = mutableListOf<LocalColeta>()
+    private fun readJsonData(context: Context): List<LocalColeta> {
+        val jsonString: String
         try {
-            val inputStream = context.resources.openRawResource(R.raw.locais)
-            val reader = BufferedReader(InputStreamReader(inputStream))
-            var line: String?
-
-            // Pula linha de cabeçalho se tiver
-            reader.readLine()
-
-            while (reader.readLine().also { line = it } != null) {
-                line?.let { rawLine ->
-                    val nome: String
-                    val endereco: String
-                    val lat: Double
-                    val lng: Double
-                    val tipoString: String // convertido depois pra TipoResiduo
-
-                    // Encontra o início do campo de endereço entre aspas
-                    val firstQuoteIndex = rawLine.indexOf('"')
-
-                    if (firstQuoteIndex == -1) {
-                        // se não tem campo com aspas, assume separação simples por vírgula
-                        val simpleParts = rawLine.split(",").map { it.trim() }
-                        if (simpleParts.size >= 5) {
-                            try {
-                                nome = simpleParts[0]
-                                endereco = simpleParts[1]
-                                lat = simpleParts[2].toDouble()
-                                lng = simpleParts[3].toDouble()
-                                tipoString = simpleParts[4]
-                                val tipo = try {
-                                    TipoResiduo.valueOf(tipoString.lowercase())
-                                } catch (e: IllegalArgumentException) {
-                                    println("Unknown residue type: ${tipoString}. Assigning UNKNOWN.")
-                                    TipoResiduo.UNKNOWN
-                                }
-                                locaisColeta.add(LocalColeta(nome = nome, endereco = endereco, lat = lat, lng = lng, tipo = tipo))
-                            } catch (e: NumberFormatException) {
-                                println("Skipping row due to number format error (simple parse): ${simpleParts.joinToString()}")
-                                e.printStackTrace()
-                            }
-                        } else {
-                            println("Skipping row due to insufficient columns (simple parse): ${simpleParts.joinToString()}")
-                        }
-                        return@let // Continua para a próxima linha
-                    }
-
-                    // Encontra o fim do campo de endereço entre aspas, começa a procurar depois da primeira aspa
-                    val endQuoteIndex = rawLine.indexOf('"', firstQuoteIndex + 1)
-                    if (endQuoteIndex == -1) {
-                        println("Skipping row due to missing closing quote for address: ${rawLine}")
-                        return@let
-                    }
-
-                    // Extrai nome
-                    val commaBeforeQuote = rawLine.substring(0, firstQuoteIndex).lastIndexOf(',')
-                    if (commaBeforeQuote != -1) {
-                        nome = rawLine.substring(0, commaBeforeQuote).trim()
-                    } else {
-                        println("Skipping row due to malformed 'nome' field: ${rawLine}")
-                        return@let
-                    }
-
-                    // Extrai endereco sem aspas
-                    endereco = rawLine.substring(firstQuoteIndex + 1, endQuoteIndex).trim()
-
-                    // Extrai as partes restantes
-                    val remainingString = rawLine.substring(endQuoteIndex + 1).trim()
-
-                    val partsAfterAddress = if (remainingString.startsWith(",")) {
-                        remainingString.substring(1).split(",").map { it.trim() }
-                    } else {
-                        remainingString.split(",").map { it.trim() }
-                    }
-
-                    if (partsAfterAddress.size >= 3) { // Esperando lat, lng, tipo
-                        try {
-                            lat = partsAfterAddress[0].toDouble()
-                            lng = partsAfterAddress[1].toDouble()
-                            tipoString = partsAfterAddress[2]
-                            val tipo = try {
-                                TipoResiduo.valueOf(tipoString.lowercase())
-                            } catch (e: IllegalArgumentException) {
-                                println("Unknown residue type: ${tipoString}. Assigning UNKNOWN.")
-                                TipoResiduo.UNKNOWN
-                            }
-                            locaisColeta.add(LocalColeta(nome = nome, endereco = endereco, lat = lat, lng = lng, tipo = tipo))
-                        } catch (e: NumberFormatException) {
-                            println("Skipping row due to number format error: ${partsAfterAddress.joinToString()}")
-                            e.printStackTrace()
-                        }
-                    } else {
-                        println("Skipping row due to insufficient columns after address: ${partsAfterAddress.joinToString()}")
-                    }
-                }
-            }
-            reader.close()
+            val inputStream = context.resources.openRawResource(R.raw.locations_data) // Assumes locais.json
+            jsonString = inputStream.bufferedReader().use { it.readText() }
             inputStream.close()
-
-            println("Locais de Coleta lidos: ${locaisColeta.size}")
-
         } catch (e: Exception) {
-            e.printStackTrace()
+            Log.e(TAG, "Error reading JSON file", e)
+            return emptyList()
         }
-        return locaisColeta
+
+        return try {
+            val jsonData = Json { ignoreUnknownKeys = true }.decodeFromString<JsonDataWrapper>(jsonString)
+            Log.d(TAG, "Locais de Coleta lidos do JSON: ${jsonData.locaisColeta.size}")
+            jsonData.locaisColeta
+        } catch (e: SerializationException) {
+            Log.e(TAG, "Error parsing JSON data", e)
+            emptyList()
+        } catch (e: Exception) {
+            Log.e(TAG, "An unexpected error occurred during JSON parsing", e)
+            emptyList()
+        }
     }
+
+    // The original readCsvData is removed. If you still need it, please clarify.
+    // private fun readCsvData(context: Context): List<LocalColeta> {
+    //     ... (original content)
+    // }
 }

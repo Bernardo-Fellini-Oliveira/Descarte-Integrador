@@ -1,0 +1,1181 @@
+{
+  "version": 1765041891,
+  "locaisColeta": [
+    {
+      "nome": "UDC BERNARDINO SILVEIRA DE AMORIM",
+      "endereco": "Av. Bernardino Silveira de Amorim, 2261",
+      "lat": "-30.0024242",
+      "long": "-51.1013863",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC CÂNCIO GOMES",
+      "endereco": " Travessa Carmem, 111",
+      "lat": "-30.0187775",
+      "long": "-51.2046783",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC CARVALHO DE FREITAS",
+      "endereco": "Rua Professor Carvalho de Freitas, 1012",
+      "lat": "-30.081431",
+      "long": "-51.1991887",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC CENTRO",
+      "endereco": "Av. Alberto Bins, 667",
+      "lat": "-30.0278243",
+      "long": "-51.218247",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC CRUZEIRO DO SUL",
+      "endereco": "Av. Cruzeiro do Sul, 1445",
+      "lat": "-29.6687505",
+      "long": "-50.7861188",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC FÁTIMA PINTO",
+      "endereco": " Rua Alfredo Ferreira Rodrigues, 975 ",
+      "lat": "-30.046662",
+      "long": "-51.1552802",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC HUMAITÁ",
+      "endereco": "Rua  José Aloísio Filho, 780",
+      "lat": "-29.985608",
+      "long": "-51.1887808",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "UDC PRINCESA ISABEL",
+      "endereco": "Avenida Ipiranga, 2765",
+      "lat": "-30.0498504",
+      "long": "-51.1952197",
+      "tipo": "ecoponto"
+    },
+    {
+      "nome": "ATACADÃO CEASA",
+      "endereco": "R. Vítor Valpírio, 850",
+      "lat": "-29.9719488",
+      "long": "-51.1702765",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "BISTEK SUPERMERCADOS LTDA. - UNIDADE 28 - DEPÓSITO CENTRAL ",
+      "endereco": "Avenida das Indústrias, 1290",
+      "lat": "-29.9878088",
+      "long": "-51.168511",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA AUXILIADORA A",
+      "endereco": "R. Eudoro Berlink, 750 ",
+      "lat": "-30.0242131",
+      "long": "-51.1904373",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "ELETRÔNICA ADILSONS",
+      "endereco": " R. 24 de Outubro, 1305",
+      "lat": "-30.0227996",
+      "long": "-51.1956355",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "ASSIST. TÉCNICA ELETROD. CEDILAR LTDA.",
+      "endereco": "Av. Ipiranga, 1477",
+      "lat": "-30.0631954",
+      "long": "-51.1509233",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "PONTO FRIO PORTO ALEGRE ZENHA",
+      "endereco": "Av. Azenha, 855a",
+      "lat": "-30.0477493",
+      "long": "-51.2135615",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA CASEMIRO DE ABREU",
+      "endereco": "R. Casemiro de Abreu, 1216",
+      "lat": "-30.0330844",
+      "long": "-51.1955141",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA CAMAQUÃ A",
+      "endereco": "Av. Otto Niemeyer, 2058",
+      "lat": "-30.1046686",
+      "long": "-51.2388867",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "PONTO FRIO PORTO AFEGRE CAVALHADA",
+      "endereco": "Avenida da Cavalhada, 2905",
+      "lat": "-30.0974225",
+      "long": "-51.2303548",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "CASAS BAHIA",
+      "endereco": "R. Dr. Flores, 75",
+      "lat": "-30.027989",
+      "long": "-51.2246808",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA ANDRADAS",
+      "endereco": "R. dos Andradas, 1195",
+      "lat": "-30.0302953",
+      "long": "-51.2309031",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA CENTRO B",
+      "endereco": "R. Duque de Caxias, 907",
+      "lat": "-30.0336323",
+      "long": "-51.2279329",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 25",
+      "endereco": "Largo Visconde do Cairu, 17",
+      "lat": "-30.0263817",
+      "long": "-51.2268952",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA TRISTEZA A",
+      "endereco": "Av. Wenceslau Escobar, 2287",
+      "lat": "-30.1224443",
+      "long": "-51.2528375",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "KALUNGA",
+      "endereco": "Av. Diário de Notícias, 300",
+      "lat": "-30.0849072",
+      "long": "-51.2457964",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA PASSO D'AREIA",
+      "endereco": "Av. Assis Brasil, 2127",
+      "lat": "-30.0068547",
+      "long": "-51.1402646",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "KALUNGA",
+      "endereco": "Av. Assis Brasil, 2611",
+      "lat": "-30.0122608",
+      "long": "-51.1607353",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 23",
+      "endereco": "Avenida Assis Brasil , 3277",
+      "lat": "-30.0068547",
+      "long": "-51.1402646",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA CRISTÓVÃO COLOMBO",
+      "endereco": "Av. Cristóvão Colombo, 2125",
+      "lat": "-30.0259385",
+      "long": "-51.2131863",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA BOA VISTA B",
+      "endereco": "Av. Cristóvão Colombo, 3701",
+      "lat": "-30.0173271",
+      "long": "-51.1829671",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "PANASUL ELETRONICA LTDA - AT PANASONIC",
+      "endereco": "R. Álvaro Chaves, 431",
+      "lat": "-30.0148957",
+      "long": "-51.2093721",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 40",
+      "endereco": "R. Visconde do Rio Branco, 566",
+      "lat": "-30.0160976",
+      "long": "-51.2039601",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA RIO BRANCO A",
+      "endereco": "R. Mostardeiro, 747",
+      "lat": "-30.028851",
+      "long": "-51.2066718",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA IPANEMA A",
+      "endereco": "R. Eng. Coelho Parreira, 668",
+      "lat": "-30.1420347",
+      "long": "-51.2253345",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "CARREFOUR - PORTO ALEGRE",
+      "endereco": "R. Albion, 111",
+      "lat": "-30.0609137",
+      "long": "-51.1643743",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA MENINO DEUS A PRINCIPAL",
+      "endereco": "Av. Getúlio Vargas, 1685",
+      "lat": "-30.0570425",
+      "long": "-51.2228205",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA MENINO DEUS B ",
+      "endereco": "R. Barão de Cerro Largo, 212",
+      "lat": "-30.0644997",
+      "long": "-51.224634",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 26",
+      "endereco": "Av. Getulio Vargas, 1039",
+      "lat": "-30.0570425",
+      "long": "-51.2228205",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA MOINHOS DE VENTO",
+      "endereco": "R. Dr. Florêncio Ygartua, 118 ",
+      "lat": "-30.0299607",
+      "long": "-51.2029412",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PEDRO IVO",
+      "endereco": "R. Pedro Ivo, 847",
+      "lat": "-30.0294881",
+      "long": "-51.1888909",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA NONOAI A",
+      "endereco": "R. Sepé Tiarajú, 1089 ",
+      "lat": "-30.0805592",
+      "long": "-51.2131394",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA PASSO D'AREIA B",
+      "endereco": "Av. João Wallig, 1800",
+      "lat": "-30.0243478",
+      "long": "-51.1624933",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA PETRÓPOLIS A ",
+      "endereco": "R. Barão do Amazonas, 278/292 ",
+      "lat": "-30.0678312",
+      "long": "-51.1981501",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA PETRÓPOLIS B",
+      "endereco": "Rua Amélia Teles, 470",
+      "lat": "-30.038023",
+      "long": "-51.1911724",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 22",
+      "endereco": "Avenida Carlos Gomes , 1657",
+      "lat": "-30.0359256",
+      "long": "-51.176081",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 32 ",
+      "endereco": "Av. Protásio Alves , 590",
+      "lat": "-30.0405226",
+      "long": "-51.1296808",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA MENINO DEUS C",
+      "endereco": "Av. Praia de Belas, 1181",
+      "lat": "-30.0496165",
+      "long": "-51.2287325",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "KALUNGA",
+      "endereco": "Av. Praia de Belas, 1181 ",
+      "lat": "-30.0496165",
+      "long": "-51.2287325",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "MULTICOISAS",
+      "endereco": "Av. Praia de Belas, 1181 ",
+      "lat": "-30.0496165",
+      "long": "-51.2287325",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA PA SANTANA A",
+      "endereco": "Rua Jerônimo de Ornelas, 241",
+      "lat": "-30.0421074",
+      "long": "-51.2122012",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "ATACADÃO SERTÓRIO",
+      "endereco": "Av. Sertório, 6767",
+      "lat": "-29.9989259",
+      "long": "-51.1410797",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "LEROY MERLIN",
+      "endereco": "Av. Sertório, 6767",
+      "lat": "-29.9989259",
+      "long": "-51.1410797",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "DROGA RAIA TRÊS FIGUEIRAS",
+      "endereco": "R. José Antônio Aranha, 423",
+      "lat": "-30.0309474",
+      "long": "-51.168721",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "SICOOB CREDICAPITAL - 24",
+      "endereco": "Avenida Wenceslau Escobar,1823",
+      "lat": "-30.1048277",
+      "long": "-51.2544127",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "BISTEK SUPERMERCADOS LTDA. - LOJA 26",
+      "endereco": "Av. do Forte, 1396",
+      "lat": "-30.0227771",
+      "long": "-51.151122",
+      "tipo": "pilhas_baterias"
+    },
+    {
+      "nome": "Associação Nacional da Indústria de Pneumáticos",
+      "endereco": "Av. Plínio Kroeff, 2050",
+      "lat": "-29.998381",
+      "long": "-51.114552",
+      "tipo": "pneus"
+    },
+    {
+      "nome": "ABT COMERCIAL",
+      "endereco": "Av. São Pedro, 924",
+      "lat": "-30.0113247",
+      "long": "-51.199764",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "ABT COMERCIAL",
+      "endereco": "Av. Eduardo Prado, 1.941",
+      "lat": "-30.1318535",
+      "long": "-51.2179773",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "THONY FERRAGEM",
+      "endereco": "Av. Cel. Lucas de Oliveira, 1.780",
+      "lat": "-30.0279831",
+      "long": "-51.1946375",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "THONY FERRAGEM",
+      "endereco": "R. Barão do Amazonas, 460",
+      "lat": "-30.0678312",
+      "long": "-51.1981501",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "THONY FERRAGEM",
+      "endereco": "Av. Getúlio Vargas, 881",
+      "lat": "-30.0570425",
+      "long": "-51.2228205",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "CARREFOUR",
+      "endereco": "R. Albion, 111",
+      "lat": "-30.0609137",
+      "long": "-51.1643743",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "CARREFOUR",
+      "endereco": "Av. Plinio Brasil Milano, 2343",
+      "lat": "-30.0132295",
+      "long": "-51.1709017",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "LEROY MERLIN",
+      "endereco": "Av. Sertório, 6767",
+      "lat": "-29.9989259",
+      "long": "-51.1410797",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "BIG SERTÓRIO",
+      "endereco": "Av. Sertório, 6600",
+      "lat": "-29.997099",
+      "long": "-51.1404591",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "ILUMINIM",
+      "endereco": "Av. Ipiranga, 7532",
+      "lat": "-30.0631954",
+      "long": "-51.1509233",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "PONTO SUL",
+      "endereco": "R. Vicente Monteggia, 989",
+      "lat": "-30.0964238",
+      "long": "-51.2213241",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "CIMAFER",
+      "endereco": "Av. Porto Alegre, 11",
+      "lat": "-30.0592306",
+      "long": "-51.2087123",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "FERRAGEM DA CRISTÓVÃO",
+      "endereco": "Av. Cristóvão Colombo, 1276",
+      "lat": "-30.0259385",
+      "long": "-51.2131863",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "MULTI FERRAGEM",
+      "endereco": "Av. Júlio De Castilhos, 337",
+      "lat": "-30.024794",
+      "long": "-51.2223965",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "ATACADÃO 88 SERTÓRIO",
+      "endereco": "Av. Sertório, 6767",
+      "lat": "-29.9989259",
+      "long": "-51.1410797",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "ZAFFARI - POA",
+      "endereco": "Av. Protasio Alves, 3814",
+      "lat": "-30.0385439",
+      "long": "-51.1727543",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "FIGUEIREDO MATERIAL DE CONSTRUÇÃO",
+      "endereco": "R. Barão do Amazonas, 1031",
+      "lat": "-30.0554471",
+      "long": "-51.189568",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "BISTEK LOJA 26",
+      "endereco": "Av. Do Forte, 1396",
+      "lat": "-30.0227771",
+      "long": "-51.151122",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "LUZ E LUSTRES - POA",
+      "endereco": "Av. São Pedro, 1117",
+      "lat": "-30.0113247",
+      "long": "-51.199764",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "REDEMAC JUCA BATISTA",
+      "endereco": "Av. Juca Batista, 2256",
+      "lat": "-30.1913895",
+      "long": "-51.1753526",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "REDEMAC OTTO",
+      "endereco": "Av. Otto Niemeyer, 1066",
+      "lat": "-30.1077978",
+      "long": "-51.2480084",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "REDEMAC RESTINGA",
+      "endereco": "Estrada Barro Vermelho,7275",
+      "lat": "-30.163023",
+      "long": "-51.143796",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "ATACADÃO 288 Porto Alegre Ceasa",
+      "endereco": "R. Vitor Valpiro, 850",
+      "lat": "-29.9726682",
+      "long": "-51.1707376",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "PLENOBRAS",
+      "endereco": "R. Voluntários Da Pátria, 2035",
+      "lat": "-29.9945131",
+      "long": "-51.2050304",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TUA CASA FERRAGEM",
+      "endereco": "R. Anita Garibaldi, 888",
+      "lat": "-30.0269538",
+      "long": "-51.1908156",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "MADEIREIRA BOA VISTA",
+      "endereco": "Av. Lami, 4580",
+      "lat": "-30.2132174",
+      "long": "-51.1297432",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "CALVIVIAN - ARESUL",
+      "endereco": "R. Condor, 820",
+      "lat": "-30.0705909",
+      "long": "-51.1715772",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "PETTER FERRAGEM",
+      "endereco": "Av. Baltazar Oliveira Garcia, 2667",
+      "lat": "-30.0151297",
+      "long": "-51.1187634",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "DESCO ATACADO - RAMIRO BARCELOS",
+      "endereco": "R. Ramiro Barcelos, 430",
+      "lat": "-30.0296248",
+      "long": "-51.208492",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELERO - MATRIZ",
+      "endereco": "Av. Assis Brasil, 5577",
+      "lat": "-30.0013701",
+      "long": "-51.1327358",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELEIRO - CRISTAL",
+      "endereco": "Av. Icaraí, 1719",
+      "lat": "-30.0944272",
+      "long": "-51.2449749",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELEIRO - CENTRO",
+      "endereco": "R. Conceição, 283",
+      "lat": "-30.0260593",
+      "long": "-51.2198672",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELEIRO - PARTENON",
+      "endereco": "Av. Bento Gonçalves, 1414",
+      "lat": "-30.0544574",
+      "long": "-51.1988614",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELEIRO - IPIRANGA",
+      "endereco": "Av. Ipiranga, 6777",
+      "lat": "-30.0631954",
+      "long": "-51.1509233",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELEIRO - MEDIANEIRA",
+      "endereco": "Av. Dr. Carlos Barbosa, 1137",
+      "lat": "-30.0669971",
+      "long": "-51.2127133",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "TELHANORTE TUMELEIRO - IPANEMA",
+      "endereco": "Av. Eduardo Prado, 1730",
+      "lat": "-30.1318535",
+      "long": "-51.2179773",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "SUPPER RISSUL F01",
+      "endereco": "Av. São Pedro, 512",
+      "lat": "-30.0093997",
+      "long": "-51.2042347",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "SUPPER RISSUL F19",
+      "endereco": "Av. Cristovão Colombo, 1980",
+      "lat": "-30.0259385",
+      "long": "-51.2131863",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "IMEC SUPERMERCADOS - DESCO ATACADO JUCA BATISTA",
+      "endereco": "Av. Edgar Pires De Castro, 25",
+      "lat": "-30.1583275",
+      "long": "-51.1898287",
+      "tipo": "lampadas"
+    },
+    {
+      "nome": "Sebanella",
+      "endereco": "Av. José Lutzenberger, 336",
+      "lat": "-29.9769021",
+      "long": "-51.1753703",
+      "tipo": "gesso"
+    },
+    {
+      "nome": "Multiplus Reciclagem de Gesso",
+      "endereco": "Avenida Severo Dullius, 125",
+      "lat": "-29.9872531",
+      "long": "-51.1611538",
+      "tipo": "gesso"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 1",
+      "endereco": "Avenida Borges de Medeiros, 36",
+      "lat": "-30.0397733",
+      "long": "-51.2284418",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 2",
+      "endereco": "Avenida Edvaldo Pereira Paiva, 481",
+      "lat": "-30.0421057",
+      "long": "-51.2386476",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 3",
+      "endereco": "Avenida Edvaldo Pereira Paiva, 800",
+      "lat": "-30.0421057",
+      "long": "-51.2386476",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 4",
+      "endereco": "Avenida Presidente João Goulart, 44",
+      "lat": "-30.0350117",
+      "long": "-51.2408727",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 5",
+      "endereco": "Avenida Edvaldo Pereira Paiva, 2779",
+      "lat": "-30.0421057",
+      "long": "-51.2386476",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 6",
+      "endereco": "Avenida Edvaldo Pereira Paiva, 902",
+      "lat": "-30.0421057",
+      "long": "-51.2386476",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 7",
+      "endereco": "Avenida Borges de Medeiros, 2697",
+      "lat": "-30.0436275",
+      "long": "-51.2288075",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 8",
+      "endereco": "Rua General Salustiano, 210",
+      "lat": "-30.0348973",
+      "long": "-51.2399364",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 9",
+      "endereco": "Rua dos Andradas, 725",
+      "lat": "-30.0302953",
+      "long": "-51.2309031",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 10",
+      "endereco": "Avenida José Bonifácio, 25",
+      "lat": "-30.0395945",
+      "long": "-51.2157413",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 11",
+      "endereco": "Avenida Osvaldo Aranha, 1.021",
+      "lat": "-30.03377",
+      "long": "-51.2150129",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 12",
+      "endereco": "Parque Germânia",
+      "lat": "-30.025593",
+      "long": "-51.1578025",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 13",
+      "endereco": "Rua Sarmento Leite, 245",
+      "lat": "-30.0313848",
+      "long": "-51.2207616",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 14",
+      "endereco": "Avenida Goethe, 2128",
+      "lat": "-30.0249931",
+      "long": "-51.2002879",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "Coletor de Resíduos de vidro 15",
+      "endereco": "Rua Jaraguá, 686",
+      "lat": "-30.0367356",
+      "long": "-51.1915644",
+      "tipo": "vidro"
+    },
+    {
+      "nome": "CRIP Extremo Sul",
+      "endereco": "Av. Desembargador Mello Guimarães, 12",
+      "lat": "-30.2079665",
+      "long": "-51.1916049",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EEEF Evaristo Flores da Cunha",
+      "endereco": "Av. Heitor Viêira",
+      "lat": "-30.2095815",
+      "long": "-51.1866861",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Escola Dr. Glicério Alves",
+      "endereco": "R. Eustáquio Inácio da Silveira, 300",
+      "lat": "-30.2101716",
+      "long": "-51.1770558",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Associação Clube de Mães Estrela de Belém",
+      "endereco": "R. Florêncio Faria, 215",
+      "lat": "-30.2080036",
+      "long": "-51.1765661",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Padre Cacique",
+      "endereco": "Estr. do Rincão, 6781",
+      "lat": "-30.1140577",
+      "long": "-51.1663093",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Centro Integrado de Desenvolvimento Ltda.",
+      "endereco": "R. Fernandes Vieira, 553",
+      "lat": "-30.0337879",
+      "long": "-51.2109522",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Fátima- Pinto",
+      "endereco": "R. Alfredo Ferreira Rodrigues, 975",
+      "lat": "-30.046662",
+      "long": "-51.1552802",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Escola de Educação Infantil Tia Beth",
+      "endereco": "R. Vinte e Sete, 125",
+      "lat": "-30.0252596",
+      "long": "-51.1072874",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Escola de Educação Infantil Somai",
+      "endereco": "R. Bom Jesus, 610",
+      "lat": "-30.0435319",
+      "long": "-51.152329",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Conjunto Habitacional Camaquã",
+      "endereco": "Tv. Escobar, 61",
+      "lat": "-30.1027606",
+      "long": "-51.2369403",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Creche Renascer Vila América",
+      "endereco": "R. Roberto Félix Bertoi, 25",
+      "lat": "-30.1023076",
+      "long": "-51.2423519",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Capatazia Cavalhada",
+      "endereco": "Av. Cavalhada, 6735",
+      "lat": "-30.0974225",
+      "long": "-51.2303548",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Campo do Periquito",
+      "endereco": "Av. Vicente Monteggia, 2682",
+      "lat": "-30.1145179",
+      "long": "-51.2125103",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Unidade de Saúde Cidade de Deus",
+      "endereco": "R. da Fé, 350",
+      "lat": "-30.1160608",
+      "long": "-51.2278929",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Cavalhada",
+      "endereco": "R. Monsenhor Ruben Neis, 730",
+      "lat": "-30.1171752",
+      "long": "-51.2283398",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EMEF Dep. Marcirio Goulart Loureiro",
+      "endereco": "R. Saibreira, 1",
+      "lat": "-30.0765025",
+      "long": "-51.1736064",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Unidade de Serviço Conceição",
+      "endereco": "R. Alberto Bins, sob a Elevada Conceição ",
+      "lat": "-30.0277783",
+      "long": "-51.2198683",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Faculdade SENAC Porto Alegre",
+      "endereco": "R. Cel. Genuíno, 130",
+      "lat": "-30.0354578",
+      "long": "-51.2261622",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Centro Administrativo do Estado Fernando Ferrari - CAFF",
+      "endereco": "Av. Borges de Medeiros, 1501",
+      "lat": "-30.0403255",
+      "long": "-51.2311931",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Nova Acrópole Porto Alegre",
+      "endereco": "Pça. Mal. Deodoro, 148",
+      "lat": "-30.0328262",
+      "long": "-51.2294322",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EMEF Porto Alegre",
+      "endereco": "R. Washington Luís, 203",
+      "lat": "-29.3434238",
+      "long": "-49.7309025",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "DEP Fábrica de Pré- Moldados",
+      "endereco": "Av. Loureiro da Silva, 250",
+      "lat": "-30.0421057",
+      "long": "-51.2386476",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Ksarosa Reciclagem",
+      "endereco": "R. Voluntários da Pátria, 1039",
+      "lat": "-29.9945131",
+      "long": "-51.2050304",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "SMSURB",
+      "endereco": "R. Gen. Lima e Silva, 972",
+      "lat": "-30.0407087",
+      "long": "-51.2185514",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Cruzeiro do Sul",
+      "endereco": "Av. Cruzeiro do Sul, 1445",
+      "lat": "-29.6687505",
+      "long": "-50.7861188",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Câncio Gomes",
+      "endereco": "Tv. Carmen, 111",
+      "lat": "-30.0187775",
+      "long": "-51.2046783",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Reciclando Pela Vida",
+      "endereco": "R. Dr. Júlio Olszewski, 01",
+      "lat": "-30.0201256",
+      "long": "-51.2151119",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Anjos da Ecologia",
+      "endereco": "R. Dr. Júlio Olszewski, 01",
+      "lat": "-30.0201256",
+      "long": "-51.2151119",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Paraíba",
+      "endereco": "Rua Paraíba, 177",
+      "lat": "-30.0177376",
+      "long": "-51.2118962",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Anitas",
+      "endereco": "R. Voluntários da Pátria, 4201,",
+      "lat": "-29.9945131",
+      "long": "-51.2050304",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Carvalho de Freitas",
+      "endereco": "R. Carvalho de Freitas, 1012",
+      "lat": "-30.0783849",
+      "long": "-51.2048907",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EMEF Prof. Anísio Teixeira",
+      "endereco": "R. Francisco Mattos Terres, 40",
+      "lat": "-30.1594639",
+      "long": "-51.2002636",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "CRAS - Centro de Referência de Assistência Social da Hípica",
+      "endereco": "R. Geraldo Tollens Linck, 235",
+      "lat": "-30.1586621",
+      "long": "-51.1761249",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Humaitá",
+      "endereco": "R. José Aloísio Filho, 780",
+      "lat": "-29.985608",
+      "long": "-51.1887808",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Unidade de Serviço IAPI - Seção Norte",
+      "endereco": "Av. Assis Brasil, 1715",
+      "lat": "-30.0068547",
+      "long": "-51.1402646",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Unidade de Serviço Ipanema",
+      "endereco": "Av. Guaíba, 2027",
+      "lat": "-30.1608309",
+      "long": "-51.2274242",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EEEF Monte Líbano",
+      "endereco": "R. Lemúria, 10",
+      "lat": "-30.1304272",
+      "long": "-51.226101",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Anchieta Comercial de Combustíveis",
+      "endereco": "Av. Salvador França, 981",
+      "lat": "-30.0598422",
+      "long": "-51.1847424",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Unidade Tibiriçá/DMLU",
+      "endereco": "R. Engº Antônio Carlos Tibiriçá, 365",
+      "lat": "-30.0476358",
+      "long": "-51.1749691",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EMEI Vale Verde",
+      "endereco": "Bc. Franklin, 270",
+      "lat": "-30.0421516",
+      "long": "-51.1432506",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EMEIF Prof. Luiz Francisco Lucena Borges",
+      "endereco": "R. Cláudio Manuel da Costa, 270",
+      "lat": "-29.5997873",
+      "long": "-50.8039158",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UTC",
+      "endereco": "Estr. Afonso Lourenço Mariante, 4401",
+      "lat": "-30.1022751",
+      "long": "-51.1444502",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Capatazia Niterói",
+      "endereco": "Av. Niterói, 19",
+      "lat": "-30.0686425",
+      "long": "-51.2124012",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Ponto das Padarias",
+      "endereco": "Av. Sertório, 1105",
+      "lat": "-30.0031495",
+      "long": "-51.1824383",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Frederico Mentz",
+      "endereco": "Rua Frederico Mentz, 1167",
+      "lat": "-29.9800952",
+      "long": "-51.1969029",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Campo da Tuca",
+      "endereco": "R. D, 200, Vila Campo da Tuca",
+      "lat": "-30.0729512",
+      "long": "-51.1728191",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "EMEI Érico Verísssimo",
+      "endereco": "R. Modesto Franco, 100",
+      "lat": "-30.0146956",
+      "long": "-51.128264",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Magda Rose Barbosa da Silva",
+      "endereco": "Bc. Souza Costa, 1684",
+      "lat": "-30.0534101",
+      "long": "-51.1405585",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Coopertinga",
+      "endereco": "Estrada João Antônio da Silveira, 3240",
+      "lat": "-30.1372583",
+      "long": "-51.0999481",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Instituição de Educação Infantil Madre Teresa",
+      "endereco": "R. Wolfran Metzler, 605",
+      "lat": "-30.0248194",
+      "long": "-51.1030841",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Santíssima Trindade",
+      "endereco": "Av. Vila Santíssima Trindade, 141",
+      "lat": "-30.0003577",
+      "long": "-51.1072227",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Bernardino Silveira Amorim",
+      "endereco": "Av. Bernardino Silveira Amorim, 2261",
+      "lat": "-30.0024242",
+      "long": "-51.1013863",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UT Rubem Berta",
+      "endereco": "Estr. Antonio Severino, 1317",
+      "lat": "-30.0249954",
+      "long": "-51.0886292",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "UDC Princesa Isabel",
+      "endereco": "Av. Ipiranga, 2765",
+      "lat": "-30.0498504",
+      "long": "-51.1952197",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Seção Nordeste/ ZEFERINO",
+      "endereco": "R. D. Jaime de Barros Câmara, 815",
+      "lat": "-30.0034452",
+      "long": "-51.1294985",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Escola Adventista de Ensino Fundamental de Sarandi",
+      "endereco": "R. Passos Figueroa, 841",
+      "lat": "-29.7754467",
+      "long": "-51.1671956",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Condomínio Vivenda dos Trevos",
+      "endereco": "R. Dr. Pereira Neto, 2200",
+      "lat": "-30.1047671",
+      "long": "-51.2317416",
+      "tipo": "oleo"
+    },
+    {
+      "nome": "Colégio Adventista Mal.",
+      "endereco": "R. Mali, 255",
+      "lat": "-30.0130582",
+      "long": "-51.1489579",
+      "tipo": "oleo"
+    }
+  ]
+}
