@@ -30,7 +30,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        // Initialize Room Database
         db = Room.databaseBuilder(
             applicationContext,
             LocalColetaDatabase::class.java,
@@ -38,10 +37,9 @@ class MainActivity : ComponentActivity() {
         ).build()
         val localColetaDao = db.localColetaDao()
 
-        // Initialize DataSource with DAO and context
         DataSource.initialize(localColetaDao, this)
 
-        // Load data from CSV into DB (if empty) in a coroutine
+
         CoroutineScope(Dispatchers.IO).launch {
             DataSource.loadLocaisColeta(this@MainActivity)
         }

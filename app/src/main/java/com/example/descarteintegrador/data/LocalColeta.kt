@@ -6,8 +6,9 @@ import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
+import kotlinx.serialization.Serializable
 
-//os nomes desse enum DEVEM estar iguais aos que estão no CSV
+//os nomes desse enum DEVEM estar iguais aos que estão no CSV/JSON
 enum class TipoResiduo {
     ecoponto,
     pilhas_baterias,
@@ -19,6 +20,7 @@ enum class TipoResiduo {
     UNKNOWN // para lidar com tipos com erro de escrita
 }
 
+@Serializable
 @Entity(tableName = "locais")
 data class LocalColeta(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,

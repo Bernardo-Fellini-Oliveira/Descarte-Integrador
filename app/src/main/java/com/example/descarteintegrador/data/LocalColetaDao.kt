@@ -30,4 +30,7 @@ interface LocalColetaDao {
 
     @Query("SELECT COUNT(*) FROM locais")
     fun getLocaisCount(): Flow<Int>
+
+    @Query("DELETE FROM locais")
+    suspend fun clearAll()
 }
