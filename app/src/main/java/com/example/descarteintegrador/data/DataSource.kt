@@ -39,15 +39,15 @@ object DataSource {
     private const val PREFS_NAME = "DescarteIntegradorPrefs"
     private const val KEY_LOCAL_DB_VERSION = "local_db_version"
 
-    private lateinit var localColetaDao: LocalColetaDao // Add DAO reference
+    private lateinit var localColetaDao: LocalColetaDao
     private lateinit var locationService: LocationService
 
-    fun initialize(dao: LocalColetaDao, context: Context) { // New initialization function
+    fun initialize(dao: LocalColetaDao, context: Context) {
         localColetaDao = dao
         locationService = LocationService(context)
     }
 
-    suspend fun loadLocaisColeta(context: Context) { // Make it suspend
+    suspend fun loadLocaisColeta(context: Context) {
         // Tenta atualizar do servidor remoto primeiro
         val updatedFromRemote = updateDatabaseIfNewer(context)
 
@@ -65,7 +65,6 @@ object DataSource {
     }
 
     // Retorna uma lista de locais de coleta filtrada por tipo de resíduo
-    // This will now return Flow<List<LocalColeta>> directly from the DAO
     fun getLocaisColetaByType(type: TipoResiduo): Flow<List<LocalColeta>> {
         return if (type == TipoResiduo.ecoponto) {
             localColetaDao.getAllLocais().map { list -> list.filter { it.tipo == TipoResiduo.ecoponto } }
@@ -78,7 +77,7 @@ object DataSource {
 
     // Retorna uma lista de locais de coleta filtrada por distância
     fun getLocaisColetaInRadius(currentLat: Double, currentLng: Double, radiusKm: Double): Flow<List<LocalColeta>> {
-        val radiusMeters = radiusKm * 1000 // Convert km to meters
+        val radiusMeters = radiusKm * 1000
         return localColetaDao.getAllLocais().map { list ->
             list.filter { localColeta ->
                 localColeta.calcularDistancia(currentLat, currentLng) <= radiusMeters
@@ -210,14 +209,13 @@ object DataSource {
             val url = URL("$SERVER_BASE_URL/api/v1/locations")
             val connection = url.openConnection() as HttpURLConnection
             connection.requestMethod = "GET"
-            connection.connectTimeout = 5000 // 5 seconds
-            connection.readTimeout = 5000 // 5 seconds
+            connection.connectTimeout = 5000
+            connection.readTimeout = 5000
 
             if (connection.responseCode == HttpURLConnection.HTTP_OK) {
                 val reader = BufferedReader(InputStreamReader(connection.inputStream))
                 val jsonString = reader.readText()
                 reader.close()
-                // Directly deserialize into a List<LocalColeta>
                 val remoteLocations = Json { ignoreUnknownKeys = true }.decodeFromString<List<LocalColeta>>(jsonString)
                 Log.d(TAG, "Locais de coleta buscados do servidor: ${remoteLocations.size}")
                 remoteLocations
@@ -240,7 +238,7 @@ object DataSource {
     // compara a versão da DB local com a remota e atualiza se necessário
     private suspend fun updateDatabaseIfNewer(context: Context): Boolean {
         return withContext(Dispatchers.IO) {
-            val localVersion = getLocalDatabaseVersion(context) // Now this gets the correct baseline
+            val localVersion = getLocalDatabaseVersion(context)
             val remoteVersion = fetchRemoteDatabaseVersion()
 
             if (remoteVersion != null && remoteVersion > localVersion) {
@@ -266,15 +264,16 @@ object DataSource {
         }
     }
 
+    // carrega DB local do arquivo JSON
     private fun readJsonData(context: Context): JsonDataWrapper {
         val jsonString: String
         try {
-            val inputStream = context.resources.openRawResource(R.raw.locations_data) // Assumes locations_data.json
+            val inputStream = context.resources.openRawResource(R.raw.locations_data)
             jsonString = inputStream.bufferedReader().use { it.readText() }
             inputStream.close()
         } catch (e: Exception) {
             Log.e(TAG, "Erro ao ler JSON", e)
-            return JsonDataWrapper(version = 0L, locaisColeta = emptyList()) // Return a default empty wrapper
+            return JsonDataWrapper(version = 0L, locaisColeta = emptyList())
         }
 
         return try {
