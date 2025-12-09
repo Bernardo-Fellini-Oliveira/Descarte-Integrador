@@ -30,9 +30,8 @@ class PesquisaViewModel : ViewModel() {
         }
     }
 
-    /**
-     * Atualiza o tipo de material a ser filtrado.
-     */
+
+     // Atualiza o tipo de material a ser filtrado.
     fun setMaterial(tipo: TipoResiduo) { // Updated reference
         _pesquisaUiState.update { currentState ->
             currentState.copy(material = tipo)

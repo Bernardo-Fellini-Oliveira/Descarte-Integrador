@@ -1,8 +1,6 @@
 package com.example.descarteintegrador.data
 
 import android.location.Location
-import com.example.descarteintegrador.data.TipoResiduo // Updated import
-import com.example.descarteintegrador.data.LocalColeta // Added import
 
 data class PesquisaUiState(
     val totalDeLocais: Int = 0,

@@ -37,4 +37,11 @@
     <string name="suggest_new_local_title">Sugerir Novo Local</string>
     <string name="street_name_label">Nome Da Rua</string>
     <string name="address_label">Número do Local (ou mais próximo)</string>
+    <string name="no_phone">Telefone Inexistente ou Desconhecido</string>
+    <string name="no_mail">Email Inexistente ou Desconhecido</string>
+    <string name="name">Nome: %s</string>
+    <string name="dist">Distância: %s</string>
+    <string name="address">Endereço: %s</string>
+    <string name="phone">Telefone: %s</string>
+    <string name="email">Email: %s</string>
 </resources>

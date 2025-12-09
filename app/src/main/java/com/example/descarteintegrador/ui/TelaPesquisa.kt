@@ -1,5 +1,6 @@
 package com.example.descarteintegrador.ui
 
+import android.R.attr.fontWeight
 import android.location.Location
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -69,21 +70,37 @@ fun LocalDeDescarte(localDeDescarte: LocalColeta, localizacao: Location, modifie
 
                 Spacer(modifier = Modifier.width(12.dp))
 
+                val darkGreyHex = stringResource(R.string.dark_grey_hex).toColorInt()
+
                 Column(modifier = Modifier.fillMaxWidth()) {
-                    val darkGreyHex = stringResource(R.string.dark_grey_hex)
                     val distanciaKm = localDeDescarte.calcularDistancia(localizacao.latitude, localizacao.longitude) / 1000.0
 
                     Text(
-                        text = localDeDescarte.nome,
+                        text = stringResource(R.string.name, formatArgs = arrayOf(localDeDescarte.nome)),
                         color = Color.White,
                         fontWeight = FontWeight.Bold
                     )
                     Text(
-                        text = "%.2f km".format(distanciaKm),
-                        color = Color(darkGreyHex.toColorInt())
+                        text = stringResource(R.string.dist, formatArgs = arrayOf("%.2f km".format(distanciaKm))),
+                        color = Color(darkGreyHex),
+                        fontWeight = FontWeight.Bold
                     )
                     Text(
-                        text = localDeDescarte.endereco,
+                        text = stringResource(R.string.address, formatArgs = arrayOf(localDeDescarte.endereco)),
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Text(
+                        text = localDeDescarte.telefone.takeIf { !it.isNullOrBlank() }
+                            ?.let { telefone -> stringResource(R.string.phone, formatArgs = arrayOf(telefone)) }
+                            ?: stringResource(R.string.no_phone),
+                        color = Color(darkGreyHex),
+                        fontWeight = FontWeight.Bold
+                    )
+                    Text(
+                        text = localDeDescarte.email.takeIf { !it.isNullOrBlank() }
+                            ?.let { email -> stringResource(R.string.email, formatArgs = arrayOf(email)) }
+                            ?: stringResource(R.string.no_mail),
                         color = Color.White,
                         fontWeight = FontWeight.Bold
                     )
