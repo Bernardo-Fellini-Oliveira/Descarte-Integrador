@@ -1,6 +1,7 @@
 package com.example.descarteintegrador.ui
 
 import android.R.attr.fontWeight
+import android.R.attr.text
 import android.location.Location
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -212,8 +213,8 @@ fun TelaPesquisa(
                 Column {
                     Text(
                         text = when(uiState.material) {
-                            TipoResiduo.UNKNOWN -> stringResource(R.string.unkown) // Updated reference
-                            TipoResiduo.ecoponto -> stringResource(R.string.ecopoint) // Updated reference
+                            TipoResiduo.UNKNOWN -> stringResource(R.string.unkown)
+                            TipoResiduo.ecoponto -> stringResource(R.string.ecopoint)
                             else -> stringResource(R.string.destination, uiState.material.name.replaceFirstChar { it.titlecase() })
                         },
                         fontWeight = FontWeight.Bold,
@@ -221,7 +222,7 @@ fun TelaPesquisa(
                     )
                     Text(
                         text = when(uiState.material) {
-                            TipoResiduo.UNKNOWN -> "" // Updated reference
+                            TipoResiduo.UNKNOWN -> ""
                             else -> stringResource(R.string.destination_found, uiState.totalDeLocais.toString())},
                         color = Color(greyHex.toColorInt())
                     )
@@ -252,7 +253,11 @@ fun TelaPesquisa(
         }
 
         Text(
-            text = stringResource(R.string.closest_locations_text),
+            text = if (uiState.isLocationAvailable && uiState.currentLocation != null) {
+                stringResource(R.string.closest_locations_text)
+            } else {
+                stringResource(R.string.no_locations)
+            },
             color = Color(orangeHex.toColorInt()),
             fontWeight = FontWeight.Bold,
             modifier = Modifier
