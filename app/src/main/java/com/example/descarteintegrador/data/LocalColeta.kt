@@ -28,7 +28,9 @@ data class LocalColeta(
     val endereco: String,
     val lat: Double,
     val lng: Double,
-    val tipo: TipoResiduo
+    val tipo: TipoResiduo,
+    val telefone: String? = null,
+    val email: String? = null
 ){
 
     //calcula distância entre dois pares de coordenadas usando a fórmula de Haversine, retorna a distância em metros
