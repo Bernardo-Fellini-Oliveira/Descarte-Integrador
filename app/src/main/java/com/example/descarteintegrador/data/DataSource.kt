@@ -35,7 +35,7 @@ object DataSource {
     private const val TAG = "DataSource"
     private const val SUGESTAO_MATERIAL_FILENAME = "sugestoes_materiais.txt"
     private const val SUGESTAO_LOCAL_FILENAME = "sugestoes_locais.txt"
-    private const val SERVER_BASE_URL = "http://192.168.15.6:5000"
+    private const val SERVER_BASE_URL = "http://192.168.15.6:5000" //Esse IP pode mudar. Se mudar aqui tem que mudar também no network_security_config.xml
     private const val PREFS_NAME = "DescarteIntegradorPrefs"
     private const val KEY_LOCAL_DB_VERSION = "local_db_version"
 
