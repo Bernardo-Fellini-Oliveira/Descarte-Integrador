@@ -57,11 +57,25 @@ object DataSource {
     }
 
     lateinit var locaisColetaList: List<LocalColeta>
-    private lateinit var locationService: LocationService
+    private val locationService: LocationService by lazy {
+        checkContextInitialized()
+        LocationService(appContext)
+    }
+
+    // Contexto para ser usado pela inicialização 'lazy'.
+    private lateinit var appContext: Context
+
+    private fun checkContextInitialized() {
+        if (!::appContext.isInitialized) {
+            throw UninitializedPropertyAccessException("DataSource.loadLocaisColeta(context) deve ser chamado antes de qualquer operação de localização.")
+        }
+    }
 
     fun loadLocaisColeta(context: Context) {
+        if (!::appContext.isInitialized) {
+            appContext = context.applicationContext
+        }
         locaisColetaList = readCsvData(context)
-        locationService = LocationService(context)
     }
 
     // Retorna uma lista de locais de coleta filtrada por tipo de resíduo

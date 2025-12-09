@@ -29,25 +29,20 @@ class PesquisaViewModel : ViewModel() {
         }
     }
 
-    /**
-     * Atualiza o tipo de material a ser filtrado.
-     */
+
+     // Atualiza o tipo de material a ser filtrado.
     fun setMaterial(tipo: DataSource.TipoResiduo) {
         _pesquisaUiState.update { currentState ->
             currentState.copy(material = tipo)
         }
     }
 
-    /**
-     * Abre o diálogo para seleção de material.
-     */
+    //Abre o diálogo para seleção de material.
     fun openMaterialSelectionDialog() {
         _pesquisaUiState.update { it.copy(isMaterialSelectionDialogOpen = true) }
     }
 
-    /**
-     * Fecha o diálogo para seleção de material.
-     */
+     // Fecha o diálogo para seleção de material.
     fun dismissMaterialSelectionDialog() {
         _pesquisaUiState.update { it.copy(isMaterialSelectionDialogOpen = false) }
     }

@@ -103,7 +103,6 @@ fun TelaPesquisa(
     onOpenDialog: () -> Unit,
     onDismissDialog: () -> Unit
 ) {
-    // Se o diálogo deve estar aberto, mostre-o.
     if (uiState.isMaterialSelectionDialogOpen) {
         MaterialSelectionDialog(
             currentMaterial = uiState.material,
@@ -119,7 +118,8 @@ fun TelaPesquisa(
         verticalArrangement = Arrangement.spacedBy(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
-            .background(color = Color.Black)
+            // cor branca não muito brilhante
+            .background(color = Color(alpha = 0xFF, red = 0xE0, green = 0xE0, blue = 0xE0))
             .padding(12.dp)
             .verticalScroll(rememberScrollState())
     ) {

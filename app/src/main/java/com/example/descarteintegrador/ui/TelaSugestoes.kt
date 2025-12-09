@@ -3,7 +3,7 @@ package com.example.descarteintegrador.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight // Importar
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -40,7 +40,6 @@ fun TelaSugestoes(
     val orangeHex = stringResource(R.string.orange_hex)
     val uiState by sugestoesViewModel.uiState.collectAsState()
 
-    // diálogos
     when (uiState.dialogOpen) {
         DialogType.MATERIAL -> {
             SugestaoMaterialDialog(
@@ -73,12 +72,11 @@ fun TelaSugestoes(
             .padding(12.dp)
     ) {
         Column(
-            // --- ALTERAÇÕES AQUI ---
-            verticalArrangement = Arrangement.Center, // Centraliza o conteúdo verticalmente
+            verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .fillMaxWidth()
-                .fillMaxHeight() // Faz a coluna ocupar toda a altura do Card
+                .fillMaxHeight()
                 .padding(vertical = 24.dp, horizontal = 16.dp)
         ) {
             Text(
@@ -89,7 +87,7 @@ fun TelaSugestoes(
             )
             Spacer(modifier = Modifier.height(32.dp))
             Column (
-                verticalArrangement = Arrangement.spacedBy(16.dp), // Espaçamento entre botões
+                verticalArrangement = Arrangement.spacedBy(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -122,13 +120,14 @@ private fun SugestaoMaterialDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Sugerir Novo Material") },
+        // CORREÇÃO: Usando o nome de string de título inequívoco
+        title = { Text(stringResource(id = R.string.suggest_new_material_title)) },
         text = {
             Column {
                 OutlinedTextField(
                     value = sugestao,
                     onValueChange = onValueChange,
-                    label = { Text("Nome do material") },
+                    label = { Text(stringResource(id = R.string.material_name_label)) },
                     singleLine = true,
                     isError = erro != null
                 )
@@ -140,14 +139,16 @@ private fun SugestaoMaterialDialog(
         confirmButton = {
             TextButton(
                 onClick = onConfirm,
-                enabled = sugestao.isNotBlank() // Botão desabilitado se texto for vazio/espaços
+                enabled = sugestao.isNotBlank()
             ) {
-                Text("Confirmar")
+                Text(stringResource(id = R.string.confirm))
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) {
-                Text("Cancelar")
+            TextButton(
+                onClick = onDismiss
+            ) {
+                Text(stringResource(id = R.string.cancel))
             }
         }
     )
@@ -164,19 +165,20 @@ private fun SugestaoLocalDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Sugerir Novo Local") },
+        // CORREÇÃO: Usando o nome de string de título inequívoco
+        title = { Text(stringResource(R.string.suggest_new_local_title)) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedTextField(
                     value = endereco,
                     onValueChange = onEnderecoChange,
-                    label = { Text("Endereço") },
+                    label = { Text(stringResource(R.string.street_name_label)) },
                     singleLine = true,
                 )
                 OutlinedTextField(
                     value = numero,
                     onValueChange = onNumeroChange,
-                    label = { Text("Número (ou mais próximo)") },
+                    label = { Text(stringResource(R.string.address_label)) },
                     singleLine = true
                 )
             }
@@ -184,15 +186,16 @@ private fun SugestaoLocalDialog(
         confirmButton = {
             TextButton(
                 onClick = onConfirm,
-                // Habilitado se ambos os campos não estiverem vazios
                 enabled = endereco.isNotBlank() && numero.isNotBlank()
             ) {
-                Text("Confirmar")
+                Text(stringResource(id = R.string.confirm))
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) {
-                Text("Cancelar")
+            TextButton(
+                onClick = onDismiss
+            ) {
+                Text(stringResource(id = R.string.cancel))
             }
         }
     )
