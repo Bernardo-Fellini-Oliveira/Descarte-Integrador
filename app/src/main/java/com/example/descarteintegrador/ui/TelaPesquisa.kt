@@ -253,7 +253,7 @@ fun TelaPesquisa(
         }
 
         Text(
-            text = if (uiState.isLocationAvailable && uiState.currentLocation != null) {
+            text = if (uiState.isLocationAvailable && uiState.currentLocation != null && uiState.locaisFiltrados.isNotEmpty()) {
                 stringResource(R.string.closest_locations_text)
             } else {
                 stringResource(R.string.no_locations)
