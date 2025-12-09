@@ -1,68 +1,85 @@
 {
-  "version": 1700000000,
+  "version": 1765317232,
   "locaisColeta": [
     {
       "nome": "UDC BERNARDINO SILVEIRA DE AMORIM",
       "endereco": "Av. Bernardino Silveira de Amorim, 2261",
       "lat": -30.0024242,
       "lng": -51.1013863,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3386-2155",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC CÂNCIO GOMES",
       "endereco": " Travessa Carmem, 111",
       "lat": -30.0187775,
       "lng": -51.2046783,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3268-8330",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC CARVALHO DE FREITAS",
       "endereco": "Rua Professor Carvalho de Freitas, 1012",
       "lat": -30.081431,
       "lng": -51.1991887,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3289-6999",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC CENTRO",
       "endereco": "Av. Alberto Bins, 667",
       "lat": -30.0278243,
       "lng": -51.218247,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3226-1950",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC CRUZEIRO DO SUL",
       "endereco": "Av. Cruzeiro do Sul, 1445",
       "lat": -29.6687505,
       "lng": -50.7861188,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3231-6064",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC FÁTIMA PINTO",
       "endereco": " Rua Alfredo Ferreira Rodrigues, 975 ",
       "lat": -30.046662,
       "lng": -51.1552802,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3367-3777",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC HUMAITÁ",
       "endereco": "Rua  José Aloísio Filho, 780",
       "lat": -29.985608,
       "lng": -51.1887808,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3289-6859",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC PRINCESA ISABEL",
       "endereco": "Avenida Ipiranga, 2765",
       "lat": -30.0498504,
       "lng": -51.1952197,
-      "tipo": "ecoponto"
+      "tipo": "ecoponto",
+      "telefone": "(51) 3289-6821",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "ATACADÃO CEASA",
       "endereco": "R. Vítor Valpírio, 850",
       "lat": -29.9719488,
       "lng": -51.1702765,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3373-4000"
     },
     {
       "nome": "BISTEK SUPERMERCADOS LTDA. - UNIDADE 28 - DEPÓSITO CENTRAL ",
@@ -76,84 +93,104 @@
       "endereco": "R. Eudoro Berlink, 750 ",
       "lat": -30.0242131,
       "lng": -51.1904373,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99751-0358",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "ELETRÔNICA ADILSONS",
       "endereco": " R. 24 de Outubro, 1305",
       "lat": -30.0227996,
       "lng": -51.1956355,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3332-7507"
     },
     {
       "nome": "ASSIST. TÉCNICA ELETROD. CEDILAR LTDA.",
       "endereco": "Av. Ipiranga, 1477",
       "lat": -30.0631954,
       "lng": -51.1509233,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3217-9658"
     },
     {
       "nome": "PONTO FRIO PORTO ALEGRE ZENHA",
       "endereco": "Av. Azenha, 855a",
       "lat": -30.0477493,
       "lng": -51.2135615,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99695-3983"
     },
     {
       "nome": "DROGA RAIA CASEMIRO DE ABREU",
       "endereco": "R. Casemiro de Abreu, 1216",
       "lat": -30.0330844,
       "lng": -51.1955141,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 98053-3909",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA CAMAQUÃ A",
       "endereco": "Av. Otto Niemeyer, 2058",
       "lat": -30.1046686,
       "lng": -51.2388867,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 98053-3909",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "PONTO FRIO PORTO AFEGRE CAVALHADA",
       "endereco": "Avenida da Cavalhada, 2905",
       "lat": -30.0974225,
       "lng": -51.2303548,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99695-7456"
     },
     {
       "nome": "CASAS BAHIA",
       "endereco": "R. Dr. Flores, 75",
       "lat": -30.027989,
       "lng": -51.2246808,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99692-8204",
+      "email": "falecom@sac.casasbahia.com.br"
     },
     {
       "nome": "DROGA RAIA ANDRADAS",
       "endereco": "R. dos Andradas, 1195",
       "lat": -30.0302953,
       "lng": -51.2309031,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 98050-1138",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA CENTRO B",
       "endereco": "R. Duque de Caxias, 907",
       "lat": -30.0336323,
       "lng": -51.2279329,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99959-9617",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 25",
       "endereco": "Largo Visconde do Cairu, 17",
       "lat": -30.0263817,
       "lng": -51.2268952,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "DROGA RAIA PA TRISTEZA A",
       "endereco": "Av. Wenceslau Escobar, 2287",
       "lat": -30.1224443,
       "lng": -51.2528375,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99707-7140",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "KALUNGA",
@@ -167,504 +204,626 @@
       "endereco": "Av. Assis Brasil, 2127",
       "lat": -30.0068547,
       "lng": -51.1402646,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": " (51) 99877-9006",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "KALUNGA",
       "endereco": "Av. Assis Brasil, 2611",
       "lat": -30.0122608,
       "lng": -51.1607353,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(11) 3346-9966"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 23",
       "endereco": "Avenida Assis Brasil , 3277",
       "lat": -30.0068547,
       "lng": -51.1402646,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "DROGA RAIA CRISTÓVÃO COLOMBO",
       "endereco": "Av. Cristóvão Colombo, 2125",
       "lat": -30.0259385,
       "lng": -51.2131863,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3085-7110",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA BOA VISTA B",
       "endereco": "Av. Cristóvão Colombo, 3701",
       "lat": -30.0173271,
       "lng": -51.1829671,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99857-1719",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "PANASUL ELETRONICA LTDA - AT PANASONIC",
       "endereco": "R. Álvaro Chaves, 431",
       "lat": -30.0148957,
       "lng": -51.2093721,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3346-4464",
+      "email": "atendimento@panasul.com.br"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 40",
       "endereco": "R. Visconde do Rio Branco, 566",
       "lat": -30.0160976,
       "lng": -51.2039601,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "DROGA RAIA PA RIO BRANCO A",
       "endereco": "R. Mostardeiro, 747",
       "lat": -30.028851,
       "lng": -51.2066718,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99977-0377",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA IPANEMA A",
-      "endereco": "R. Eng. Coelho Parreira, 668",
+      "endereco": "Av. Tramandaí, 748",
       "lat": -30.1420347,
       "lng": -51.2253345,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99628-0579",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "CARREFOUR - PORTO ALEGRE",
       "endereco": "R. Albion, 111",
       "lat": -30.0609137,
       "lng": -51.1643743,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3315-5223",
+      "email": "atendimento@carrefour.com.br"
     },
     {
       "nome": "DROGA RAIA PA MENINO DEUS A PRINCIPAL",
       "endereco": "Av. Getúlio Vargas, 1685",
       "lat": -30.0570425,
       "lng": -51.2228205,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99532-1482",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA MENINO DEUS B ",
-      "endereco": "R. Barão de Cerro Largo, 212",
+      "endereco": "R. Silveiro, 221",
       "lat": -30.0644997,
       "lng": -51.224634,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99559-0494",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 26",
       "endereco": "Av. Getulio Vargas, 1039",
       "lat": -30.0570425,
       "lng": -51.2228205,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "DROGA RAIA MOINHOS DE VENTO",
       "endereco": "R. Dr. Florêncio Ygartua, 118 ",
       "lat": -30.0299607,
       "lng": -51.2029412,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99824-8865",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PEDRO IVO",
       "endereco": "R. Pedro Ivo, 847",
       "lat": -30.0294881,
       "lng": -51.1888909,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99892-0897",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA NONOAI A",
       "endereco": "R. Sepé Tiarajú, 1089 ",
       "lat": -30.0805592,
       "lng": -51.2131394,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99826-5410",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA PASSO D'AREIA B",
       "endereco": "Av. João Wallig, 1800",
       "lat": -30.0243478,
       "lng": -51.1624933,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99968-4738",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA PETRÓPOLIS A ",
       "endereco": "R. Barão do Amazonas, 278/292 ",
       "lat": -30.0678312,
       "lng": -51.1981501,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 98062-1509",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "DROGA RAIA PA PETRÓPOLIS B",
       "endereco": "Rua Amélia Teles, 470",
       "lat": -30.038023,
       "lng": -51.1911724,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 98047-2517",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 22",
       "endereco": "Avenida Carlos Gomes , 1657",
       "lat": -30.0359256,
       "lng": -51.176081,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 32 ",
       "endereco": "Av. Protásio Alves , 590",
       "lat": -30.0405226,
       "lng": -51.1296808,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "DROGA RAIA PA MENINO DEUS C",
       "endereco": "Av. Praia de Belas, 1181",
       "lat": -30.0496165,
       "lng": -51.2287325,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99866-9471",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "KALUNGA",
       "endereco": "Av. Praia de Belas, 1181 ",
       "lat": -30.0496165,
       "lng": -51.2287325,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(11) 3346-9966"
     },
     {
       "nome": "MULTICOISAS",
       "endereco": "Av. Praia de Belas, 1181 ",
       "lat": -30.0496165,
       "lng": -51.2287325,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99364-9066"
     },
     {
       "nome": "DROGA RAIA PA SANTANA A",
       "endereco": "Rua Jerônimo de Ornelas, 241",
       "lat": -30.0421074,
       "lng": -51.2122012,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99590-5131",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "ATACADÃO SERTÓRIO",
       "endereco": "Av. Sertório, 6767",
       "lat": -29.9989259,
       "lng": -51.1410797,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3390-1624"
     },
     {
       "nome": "LEROY MERLIN",
       "endereco": "Av. Sertório, 6767",
       "lat": -29.9989259,
       "lng": -51.1410797,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(11) 4020-5376"
     },
     {
       "nome": "DROGA RAIA TRÊS FIGUEIRAS",
       "endereco": "R. José Antônio Aranha, 423",
       "lat": -30.0309474,
       "lng": -51.168721,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 99940-5458",
+      "email": "atendimento@drogasil.com.br"
     },
     {
       "nome": "SICOOB CREDICAPITAL - 24",
       "endereco": "Avenida Wenceslau Escobar,1823",
       "lat": -30.1048277,
       "lng": -51.2544127,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(45) 4000-1914",
+      "email": "contato@sicoobcressem.com.br"
     },
     {
       "nome": "BISTEK SUPERMERCADOS LTDA. - LOJA 26",
       "endereco": "Av. do Forte, 1396",
       "lat": -30.0227771,
       "lng": -51.151122,
-      "tipo": "pilhas_baterias"
+      "tipo": "pilhas_baterias",
+      "telefone": "(51) 3407-0059"
     },
     {
       "nome": "Associação Nacional da Indústria de Pneumáticos",
       "endereco": "Av. Plínio Kroeff, 2050",
       "lat": -29.998381,
       "lng": -51.114552,
-      "tipo": "pneus"
+      "tipo": "pneus",
+      "telefone": "(51) 8412-7574"
     },
     {
       "nome": "ABT COMERCIAL",
       "endereco": "Av. São Pedro, 924",
       "lat": -30.0113247,
       "lng": -51.199764,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3018-3800",
+      "email": "vendas@abteletrica.com.br"
     },
     {
       "nome": "ABT COMERCIAL",
       "endereco": "Av. Eduardo Prado, 1.941",
       "lat": -30.1318535,
       "lng": -51.2179773,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3018-3800",
+      "email": "vendas@abteletrica.com.br"
     },
     {
       "nome": "THONY FERRAGEM",
       "endereco": "Av. Cel. Lucas de Oliveira, 1.780",
       "lat": -30.0279831,
       "lng": -51.1946375,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3061-0558",
+      "email": "atendimento@thony.com.br"
     },
     {
       "nome": "THONY FERRAGEM",
       "endereco": "R. Barão do Amazonas, 460",
       "lat": -30.0678312,
       "lng": -51.1981501,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3012-1504",
+      "email": "atendimento@thony.com.br"
     },
     {
       "nome": "THONY FERRAGEM",
       "endereco": "Av. Getúlio Vargas, 881",
       "lat": -30.0570425,
       "lng": -51.2228205,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3369-3737",
+      "email": "atendimento@thony.com.br"
     },
     {
       "nome": "CARREFOUR",
       "endereco": "R. Albion, 111",
       "lat": -30.0609137,
       "lng": -51.1643743,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3315-5223",
+      "email": "atendimento@carrefour.com.br"
     },
     {
       "nome": "CARREFOUR",
       "endereco": "Av. Plinio Brasil Milano, 2343",
       "lat": -30.0132295,
       "lng": -51.1709017,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(11) 3004-2222",
+      "email": "atendimento@carrefour.com.br"
     },
     {
       "nome": "LEROY MERLIN",
       "endereco": "Av. Sertório, 6767",
       "lat": -29.9989259,
       "lng": -51.1410797,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(11) 4020-5376"
     },
     {
       "nome": "BIG SERTÓRIO",
       "endereco": "Av. Sertório, 6600",
       "lat": -29.997099,
       "lng": -51.1404591,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3349-4640",
+      "email": "atendimento@carrefour.com.br"
     },
     {
       "nome": "ILUMINIM",
       "endereco": "Av. Ipiranga, 7532",
       "lat": -30.0631954,
       "lng": -51.1509233,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 2312-2413"
     },
     {
       "nome": "PONTO SUL",
       "endereco": "R. Vicente Monteggia, 989",
       "lat": -30.0964238,
       "lng": -51.2213241,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3241-5600",
+      "email": "vendas@ferragempontosul.com.br"
     },
     {
       "nome": "CIMAFER",
-      "endereco": "Av. Porto Alegre, 11",
+      "endereco": "Av. Dr. Carlos Barbosa, 726",
       "lat": -30.0592306,
       "lng": -51.2087123,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3219-5644",
+      "email": "sac@cimafer.com.br"
     },
     {
       "nome": "FERRAGEM DA CRISTÓVÃO",
       "endereco": "Av. Cristóvão Colombo, 1276",
       "lat": -30.0259385,
       "lng": -51.2131863,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 99611-8377"
     },
     {
       "nome": "MULTI FERRAGEM",
       "endereco": "Av. Júlio De Castilhos, 337",
       "lat": -30.024794,
       "lng": -51.2223965,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3225-9020"
     },
     {
       "nome": "ATACADÃO 88 SERTÓRIO",
       "endereco": "Av. Sertório, 6767",
       "lat": -29.9989259,
       "lng": -51.1410797,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3390-1605"
     },
     {
       "nome": "ZAFFARI - POA",
       "endereco": "Av. Protasio Alves, 3814",
       "lat": -30.0385439,
       "lng": -51.1727543,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-1112"
     },
     {
       "nome": "FIGUEIREDO MATERIAL DE CONSTRUÇÃO",
       "endereco": "R. Barão do Amazonas, 1031",
       "lat": -30.0554471,
       "lng": -51.189568,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3407-4004"
     },
     {
       "nome": "BISTEK LOJA 26",
       "endereco": "Av. Do Forte, 1396",
       "lat": -30.0227771,
       "lng": -51.151122,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3407-0059"
     },
     {
       "nome": "LUZ E LUSTRES - POA",
       "endereco": "Av. São Pedro, 1117",
       "lat": -30.0113247,
       "lng": -51.199764,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 99596-5489",
+      "email": "luzelustres@luzelustres.com.br"
     },
     {
       "nome": "REDEMAC JUCA BATISTA",
       "endereco": "Av. Juca Batista, 2256",
       "lat": -30.1913895,
       "lng": -51.1753526,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4020-4021"
     },
     {
       "nome": "REDEMAC OTTO",
       "endereco": "Av. Otto Niemeyer, 1066",
       "lat": -30.1077978,
       "lng": -51.2480084,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4020-4021"
     },
     {
       "nome": "REDEMAC RESTINGA",
       "endereco": "Estrada Barro Vermelho,7275",
       "lat": -30.163023,
       "lng": -51.143796,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4020-4021"
     },
     {
       "nome": "ATACADÃO 288 Porto Alegre Ceasa",
       "endereco": "R. Vitor Valpiro, 850",
       "lat": -29.9726682,
       "lng": -51.1707376,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3373-4000"
     },
     {
       "nome": "PLENOBRAS",
       "endereco": "R. Voluntários Da Pátria, 2035",
       "lat": -29.9945131,
       "lng": -51.2050304,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 2101-6800",
+      "email": "plenobras@plenobras.com.br"
     },
     {
       "nome": "TUA CASA FERRAGEM",
       "endereco": "R. Anita Garibaldi, 888",
       "lat": -30.0269538,
       "lng": -51.1908156,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3907-3152",
+      "email": "vendas@tuacasaferragem.com.br"
     },
     {
       "nome": "MADEIREIRA BOA VISTA",
       "endereco": "Av. Lami, 4580",
       "lat": -30.2132174,
       "lng": -51.1297432,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 98021-1068"
     },
     {
       "nome": "CALVIVIAN - ARESUL",
       "endereco": "R. Condor, 820",
       "lat": -30.0705909,
       "lng": -51.1715772,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3318-1067"
     },
     {
       "nome": "PETTER FERRAGEM",
       "endereco": "Av. Baltazar Oliveira Garcia, 2667",
       "lat": -30.0151297,
       "lng": -51.1187634,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3340-6588"
     },
     {
       "nome": "DESCO ATACADO - RAMIRO BARCELOS",
       "endereco": "R. Ramiro Barcelos, 430",
       "lat": -30.0296248,
       "lng": -51.208492,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 2313-6464",
+      "email": "sac@superimec.com.br"
     },
     {
       "nome": "TELHANORTE TUMELERO - MATRIZ",
       "endereco": "Av. Assis Brasil, 5577",
       "lat": -30.0013701,
       "lng": -51.1327358,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "TELHANORTE TUMELEIRO - CRISTAL",
       "endereco": "Av. Icaraí, 1719",
       "lat": -30.0944272,
       "lng": -51.2449749,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "TELHANORTE TUMELEIRO - CENTRO",
       "endereco": "R. Conceição, 283",
       "lat": -30.0260593,
       "lng": -51.2198672,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "TELHANORTE TUMELEIRO - PARTENON",
       "endereco": "Av. Bento Gonçalves, 1414",
       "lat": -30.0544574,
       "lng": -51.1988614,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "TELHANORTE TUMELEIRO - IPIRANGA",
       "endereco": "Av. Ipiranga, 6777",
       "lat": -30.0631954,
       "lng": -51.1509233,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "TELHANORTE TUMELEIRO - MEDIANEIRA",
       "endereco": "Av. Dr. Carlos Barbosa, 1137",
       "lat": -30.0669971,
       "lng": -51.2127133,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "TELHANORTE TUMELEIRO - IPANEMA",
       "endereco": "Av. Eduardo Prado, 1730",
       "lat": -30.1318535,
       "lng": -51.2179773,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 4004-2444",
+      "email": "atendimento@telhanorte.com.br"
     },
     {
       "nome": "SUPPER RISSUL F01",
       "endereco": "Av. São Pedro, 512",
       "lat": -30.0093997,
       "lng": -51.2042347,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3337-4751",
+      "email": "sac@unidasul.com.br"
     },
     {
       "nome": "SUPPER RISSUL F19",
       "endereco": "Av. Cristovão Colombo, 1980",
       "lat": -30.0259385,
       "lng": -51.2131863,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 3395-1317",
+      "email": "sac@unidasul.com.br"
     },
     {
       "nome": "IMEC SUPERMERCADOS - DESCO ATACADO JUCA BATISTA",
       "endereco": "Av. Edgar Pires De Castro, 25",
       "lat": -30.1583275,
       "lng": -51.1898287,
-      "tipo": "lampadas"
+      "tipo": "lampadas",
+      "telefone": "(51) 2313-6444",
+      "email": "sac@superimec.com.br"
     },
     {
       "nome": "Sebanella",
       "endereco": "Av. José Lutzenberger, 336",
       "lat": -29.9769021,
       "lng": -51.1753703,
-      "tipo": "gesso"
+      "tipo": "gesso",
+      "telefone": "(51) 98993-0858",
+      "email": "atendimento@sebanella.com.br"
     },
     {
       "nome": "Multiplus Reciclagem de Gesso",
       "endereco": "Avenida Severo Dullius, 125",
       "lat": -29.9872531,
       "lng": -51.1611538,
-      "tipo": "gesso"
+      "tipo": "gesso",
+      "telefone": "(51) 3010-6135",
+      "email": "rafael.guimaraes@brmultiplus.com.br"
     },
     {
       "nome": "Coletor de Resíduos de vidro 1",
@@ -776,392 +935,484 @@
       "endereco": "Av. Desembargador Mello Guimarães, 12",
       "lat": -30.2079665,
       "lng": -51.1916049,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-8406",
+      "email": "sub.extremosul@portoalegre.rs.gov.br"
     },
     {
       "nome": "EEEF Evaristo Flores da Cunha",
       "endereco": "Av. Heitor Viêira",
       "lat": -30.2095815,
       "lng": -51.1866861,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3259-1353",
+      "email": "evaristafloresdacunha01cre@educar.rs.gov.br"
     },
     {
       "nome": "Escola Dr. Glicério Alves",
       "endereco": "R. Eustáquio Inácio da Silveira, 300",
       "lat": -30.2101716,
       "lng": -51.1770558,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3259-1000",
+      "email": "drglicerioalves01cre@educar.rs.gov.br"
     },
     {
       "nome": "Associação Clube de Mães Estrela de Belém",
       "endereco": "R. Florêncio Faria, 215",
       "lat": -30.2080036,
       "lng": -51.1765661,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3259-5590",
+      "email": "cm_eb@yahoo.com.br"
     },
     {
       "nome": "UT Padre Cacique",
       "endereco": "Estr. do Rincão, 6781",
       "lat": -30.1140577,
       "lng": -51.1663093,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98613-8314"
     },
     {
       "nome": "Centro Integrado de Desenvolvimento Ltda.",
       "endereco": "R. Fernandes Vieira, 553",
       "lat": -30.0337879,
       "lng": -51.2109522,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3311-2789",
+      "email": "cid@cid.g12.br"
     },
     {
       "nome": "UDC Fátima- Pinto",
       "endereco": "R. Alfredo Ferreira Rodrigues, 975",
       "lat": -30.046662,
       "lng": -51.1552802,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3367-3777",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "Escola de Educação Infantil Tia Beth",
       "endereco": "R. Vinte e Sete, 125",
       "lat": -30.0252596,
       "lng": -51.1072874,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 99587-7828",
+      "email": "adm40@cpij.org.br"
     },
     {
       "nome": "Escola de Educação Infantil Somai",
       "endereco": "R. Bom Jesus, 610",
       "lat": -30.0435319,
       "lng": -51.152329,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98592-0008",
+      "email": "institucional.creche.somai@yahoo.com"
     },
     {
       "nome": "Conjunto Habitacional Camaquã",
       "endereco": "Tv. Escobar, 61",
       "lat": -30.1027606,
       "lng": -51.2369403,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98554-0356"
     },
     {
       "nome": "Creche Renascer Vila América",
       "endereco": "R. Roberto Félix Bertoi, 25",
       "lat": -30.1023076,
       "lng": -51.2423519,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3241-7161"
     },
     {
       "nome": "Capatazia Cavalhada",
       "endereco": "Av. Cavalhada, 6735",
       "lat": -30.0974225,
       "lng": -51.2303548,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 99763-0973"
     },
     {
       "nome": "Campo do Periquito",
       "endereco": "Av. Vicente Monteggia, 2682",
       "lat": -30.1145179,
       "lng": -51.2125103,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98506-3395"
     },
     {
       "nome": "Unidade de Saúde Cidade de Deus",
       "endereco": "R. da Fé, 350",
       "lat": -30.1160608,
       "lng": -51.2278929,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3248-4477"
     },
     {
       "nome": "UT Cavalhada",
       "endereco": "R. Monsenhor Ruben Neis, 730",
       "lat": -30.1171752,
       "lng": -51.2283398,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-5978"
     },
     {
       "nome": "EMEF Dep. Marcirio Goulart Loureiro",
       "endereco": "R. Saibreira, 1",
       "lat": -30.0765025,
       "lng": -51.1736064,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-5899"
     },
     {
       "nome": "Unidade de Serviço Conceição",
       "endereco": "R. Alberto Bins, sob a Elevada Conceição ",
       "lat": -30.0277783,
       "lng": -51.2198683,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98447-3774"
     },
     {
       "nome": "Faculdade SENAC Porto Alegre",
       "endereco": "R. Cel. Genuíno, 130",
       "lat": -30.0354578,
       "lng": -51.2261622,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 99129-9744",
+      "email": "faculdadesenacpoa@senacrs.com.br"
     },
     {
       "nome": "Centro Administrativo do Estado Fernando Ferrari - CAFF",
       "endereco": "Av. Borges de Medeiros, 1501",
       "lat": -30.0403255,
       "lng": -51.2311931,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3288-1299",
+      "email": "dicae@spgg.rs.gov.br"
     },
     {
       "nome": "Nova Acrópole Porto Alegre",
       "endereco": "Pça. Mal. Deodoro, 148",
       "lat": -30.0328262,
       "lng": -51.2294322,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3023-4433"
     },
     {
       "nome": "EMEF Porto Alegre",
       "endereco": "R. Washington Luís, 203",
       "lat": -29.3434238,
       "lng": -49.7309025,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-5993",
+      "email": "emef.portoalegre@smed.prefpoa.com.br"
     },
     {
       "nome": "DEP Fábrica de Pré- Moldados",
       "endereco": "Av. Loureiro da Silva, 250",
       "lat": -30.0421057,
       "lng": -51.2386476,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 4061-0032"
     },
     {
       "nome": "Ksarosa Reciclagem",
       "endereco": "R. Voluntários da Pátria, 1039",
       "lat": -29.9945131,
       "lng": -51.2050304,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98644-4363",
+      "email": "coletivoksarosa@gmail.com"
     },
     {
       "nome": "SMSURB",
       "endereco": "R. Gen. Lima e Silva, 972",
       "lat": -30.0407087,
       "lng": -51.2185514,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-2206"
     },
     {
       "nome": "UDC Cruzeiro do Sul",
       "endereco": "Av. Cruzeiro do Sul, 1445",
       "lat": -29.6687505,
       "lng": -50.7861188,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3231-6064",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UDC Câncio Gomes",
       "endereco": "Tv. Carmen, 111",
       "lat": -30.0187775,
       "lng": -51.2046783,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3268-8330",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "UT Reciclando Pela Vida",
       "endereco": "R. Dr. Júlio Olszewski, 01",
       "lat": -30.0201256,
       "lng": -51.2151119,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98036-8730",
+      "email": "coopertinga.reciclagem@gmail.com"
     },
     {
       "nome": "UT Anjos da Ecologia",
       "endereco": "R. Dr. Júlio Olszewski, 01",
       "lat": -30.0201256,
       "lng": -51.2151119,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 99302.4851",
+      "email": "reciclandopelavida@gmail.com"
     },
     {
       "nome": "UT Paraíba",
       "endereco": "Rua Paraíba, 177",
       "lat": -30.0177376,
       "lng": -51.2118962,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 9269-4706"
     },
     {
       "nome": "UT Anitas",
       "endereco": "R. Voluntários da Pátria, 4201,",
       "lat": -29.9945131,
       "lng": -51.2050304,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98579-6318",
+      "email": "  cooperativaanitas@gmail.com"
     },
     {
       "nome": "UDC Carvalho de Freitas",
       "endereco": "R. Carvalho de Freitas, 1012",
       "lat": -30.0783849,
       "lng": -51.2048907,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-6999",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "EMEF Prof. Anísio Teixeira",
       "endereco": "R. Francisco Mattos Terres, 40",
       "lat": -30.1594639,
       "lng": -51.2002636,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3264-1540",
+      "email": "gestaoanisio@gmail.com"
     },
     {
       "nome": "CRAS - Centro de Referência de Assistência Social da Hípica",
       "endereco": "R. Geraldo Tollens Linck, 235",
       "lat": -30.1586621,
       "lng": -51.1761249,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-4776",
+      "email": "crasfarrapos@fasc.prefpoa.com.br"
     },
     {
       "nome": "UDC Humaitá",
       "endereco": "R. José Aloísio Filho, 780",
       "lat": -29.985608,
       "lng": -51.1887808,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-6859",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "Unidade de Serviço IAPI - Seção Norte",
       "endereco": "Av. Assis Brasil, 1715",
       "lat": -30.0068547,
       "lng": -51.1402646,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3342-6121"
     },
     {
       "nome": "Unidade de Serviço Ipanema",
       "endereco": "Av. Guaíba, 2027",
       "lat": -30.1608309,
       "lng": -51.2274242,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3248-1725"
     },
     {
       "nome": "EEEF Monte Líbano",
       "endereco": "R. Lemúria, 10",
       "lat": -30.1304272,
       "lng": -51.226101,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3246-9874",
+      "email": "montelibano01cre@educar.rs.gov.br"
     },
     {
       "nome": "Anchieta Comercial de Combustíveis",
       "endereco": "Av. Salvador França, 981",
       "lat": -30.0598422,
       "lng": -51.1847424,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3319-9702",
+      "email": "faleconosco@grupoanchieta.com"
     },
     {
       "nome": "Unidade Tibiriçá/DMLU",
       "endereco": "R. Engº Antônio Carlos Tibiriçá, 365",
       "lat": -30.0476358,
       "lng": -51.1749691,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-6815",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "EMEI Vale Verde",
       "endereco": "Bc. Franklin, 270",
       "lat": -30.0421516,
       "lng": -51.1432506,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-5832",
+      "email": "emei.valeverde@smed.prefpoa.com.br"
     },
     {
       "nome": "EMEIF Prof. Luiz Francisco Lucena Borges",
       "endereco": "R. Cláudio Manuel da Costa, 270",
       "lat": -29.5997873,
       "lng": -50.8039158,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-5875"
     },
     {
       "nome": "UTC",
       "endereco": "Estr. Afonso Lourenço Mariante, 4401",
       "lat": -30.1022751,
       "lng": -51.1444502,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3103-3162"
     },
     {
       "nome": "Capatazia Niterói",
       "endereco": "Av. Niterói, 19",
       "lat": -30.0686425,
       "lng": -51.2124012,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "3217-9257"
     },
     {
       "nome": "Ponto das Padarias",
       "endereco": "Av. Sertório, 1105",
       "lat": -30.0031495,
       "lng": -51.1824383,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3342-2266",
+      "email": "fabianovendas@pontodaspadarias.com.br"
     },
     {
       "nome": "UT Frederico Mentz",
       "endereco": "Rua Frederico Mentz, 1167",
       "lat": -29.9800952,
       "lng": -51.1969029,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98298-2151",
+      "email": "sepetiaraju.cear@gmail.com"
     },
     {
       "nome": "UT Campo da Tuca",
       "endereco": "R. D, 200, Vila Campo da Tuca",
       "lat": -30.0729512,
       "lng": -51.1728191,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98408-5079",
+      "email": "reciclagemcampodatuca@gmail.com"
     },
     {
       "nome": "EMEI Érico Verísssimo",
       "endereco": "R. Modesto Franco, 100",
       "lat": -30.0146956,
       "lng": -51.128264,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3348-1408",
+      "email": "emei.ericoverissimo@smed.prefpoa.com.br"
     },
     {
       "nome": "Magda Rose Barbosa da Silva",
       "endereco": "Bc. Souza Costa, 1684",
       "lat": -30.0534101,
       "lng": -51.1405585,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 98614.77.03"
     },
     {
       "nome": "UT Coopertinga",
       "endereco": "Estrada João Antônio da Silveira, 3240",
       "lat": -30.1372583,
       "lng": -51.0999481,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3259-5252",
+      "email": "coopertinga.reciclagem@gmail.com"
     },
     {
       "nome": "Instituição de Educação Infantil Madre Teresa",
       "endereco": "R. Wolfran Metzler, 605",
       "lat": -30.0248194,
       "lng": -51.1030841,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3366-3177",
+      "email": "iemadreteresa@gmail.com"
     },
     {
       "nome": "UT Santíssima Trindade",
       "endereco": "Av. Vila Santíssima Trindade, 141",
       "lat": -30.0003577,
       "lng": -51.1072227,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3367-1963",
+      "email": "psst@ghc.com.br"
     },
     {
       "nome": "UDC Bernardino Silveira Amorim",
       "endereco": "Av. Bernardino Silveira Amorim, 2261",
       "lat": -30.0024242,
       "lng": -51.1013863,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 99868-4555",
+      "email": "utsantissima@gmail.com"
     },
     {
       "nome": "UT Rubem Berta",
       "endereco": "Estr. Antonio Severino, 1317",
       "lat": -30.0249954,
       "lng": -51.0886292,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3366-9522",
+      "email": " arerubemberta@gmail.com"
     },
     {
       "nome": "UDC Princesa Isabel",
       "endereco": "Av. Ipiranga, 2765",
       "lat": -30.0498504,
       "lng": -51.1952197,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3289-6821",
+      "email": "dmlu@dmlu.prefpoa.com.br"
     },
     {
       "nome": "Seção Nordeste/ ZEFERINO",
       "endereco": "R. D. Jaime de Barros Câmara, 815",
       "lat": -30.0034452,
       "lng": -51.1294985,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3365-4053"
     },
     {
       "nome": "Escola Adventista de Ensino Fundamental de Sarandi",
       "endereco": "R. Passos Figueroa, 841",
       "lat": -29.7754467,
       "lng": -51.1671956,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3092-1414",
+      "email": "eas.acsr@adventistas.org.br"
     },
     {
       "nome": "Condomínio Vivenda dos Trevos",
@@ -1175,7 +1426,8 @@
       "endereco": "R. Mali, 255",
       "lat": -30.0130582,
       "lng": -51.1489579,
-      "tipo": "oleo"
+      "tipo": "oleo",
+      "telefone": "(51) 3349-6600"
     }
   ]
 }
