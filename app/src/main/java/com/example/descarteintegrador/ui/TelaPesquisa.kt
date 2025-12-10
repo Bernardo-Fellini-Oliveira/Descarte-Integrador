@@ -1,7 +1,5 @@
 package com.example.descarteintegrador.ui
 
-import android.R.attr.fontWeight
-import android.R.attr.text
 import android.location.Location
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -14,6 +12,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.RadioButtonDefaults
 import androidx.compose.material3.Text
@@ -27,6 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -41,9 +41,11 @@ import com.example.descarteintegrador.data.TipoResiduo // Added import
 import com.example.descarteintegrador.data.LocalColeta // Added import
 import com.example.descarteintegrador.ui.components.BotaoComTexto
 import com.example.descarteintegrador.ui.theme.DescarteIntegradorTheme
+import com.example.descarteintegrador.ui.utils.IntentUtils
 
 @Composable
-fun LocalDeDescarte(localDeDescarte: LocalColeta, localizacao: Location, modifier: Modifier = Modifier) { // Updated reference
+fun LocalDeDescarte(localDeDescarte: LocalColeta, localizacao: Location, modifier: Modifier = Modifier) {
+    val context = LocalContext.current
     Card(
         modifier = modifier
             .fillMaxWidth(),
@@ -59,53 +61,53 @@ fun LocalDeDescarte(localDeDescarte: LocalColeta, localizacao: Location, modifie
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
 
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            IconButton(
+                onClick = { IntentUtils.openMap(context, localDeDescarte.endereco) },
+                modifier = Modifier.size(48.dp)
+            ) {
                 Image(
                     painter = painterResource(R.drawable.localiza__o),
-                    contentDescription = null,
-                    colorFilter = ColorFilter.tint(Color.White),
-                    modifier = Modifier
-                        .size(48.dp)
-
+                    contentDescription = "Abrir no mapa",
+                    colorFilter = ColorFilter.tint(Color.White)
                 )
+            }
 
-                Spacer(modifier = Modifier.width(12.dp))
+            Spacer(modifier = Modifier.width(12.dp))
 
-                val darkGreyHex = stringResource(R.string.dark_grey_hex).toColorInt()
+            val darkGreyHex = stringResource(R.string.dark_grey_hex).toColorInt()
 
-                Column(modifier = Modifier.fillMaxWidth()) {
-                    val distanciaKm = localDeDescarte.calcularDistancia(localizacao.latitude, localizacao.longitude) / 1000.0
+            Column(modifier = Modifier.weight(1f)) {
+                val distanciaKm = localDeDescarte.calcularDistancia(localizacao.latitude, localizacao.longitude) / 1000.0
 
-                    Text(
-                        text = stringResource(R.string.name, formatArgs = arrayOf(localDeDescarte.nome)),
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
-                    )
-                    Text(
-                        text = stringResource(R.string.dist, formatArgs = arrayOf("%.2f km".format(distanciaKm))),
-                        color = Color(darkGreyHex),
-                        fontWeight = FontWeight.Bold
-                    )
-                    Text(
-                        text = stringResource(R.string.address, formatArgs = arrayOf(localDeDescarte.endereco)),
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
-                    )
-                    Text(
-                        text = localDeDescarte.telefone.takeIf { !it.isNullOrBlank() }
-                            ?.let { telefone -> stringResource(R.string.phone, formatArgs = arrayOf(telefone)) }
-                            ?: stringResource(R.string.no_phone),
-                        color = Color(darkGreyHex),
-                        fontWeight = FontWeight.Bold
-                    )
-                    Text(
-                        text = localDeDescarte.email.takeIf { !it.isNullOrBlank() }
-                            ?.let { email -> stringResource(R.string.email, formatArgs = arrayOf(email)) }
-                            ?: stringResource(R.string.no_mail),
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
-                    )
-                }
+                Text(
+                    text = stringResource(R.string.name, formatArgs = arrayOf(localDeDescarte.nome)),
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = stringResource(R.string.dist, formatArgs = arrayOf("%.2f km".format(distanciaKm))),
+                    color = Color(darkGreyHex),
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = stringResource(R.string.address, formatArgs = arrayOf(localDeDescarte.endereco)),
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = localDeDescarte.telefone.takeIf { !it.isNullOrBlank() }
+                        ?.let { telefone -> stringResource(R.string.phone, formatArgs = arrayOf(telefone)) }
+                        ?: stringResource(R.string.no_phone),
+                    color = Color(darkGreyHex),
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = localDeDescarte.email.takeIf { !it.isNullOrBlank() }
+                        ?.let { email -> stringResource(R.string.email, formatArgs = arrayOf(email)) }
+                        ?: stringResource(R.string.no_mail),
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
             }
         }
     }
@@ -210,7 +212,10 @@ fun TelaPesquisa(
                 modifier = Modifier.padding(16.dp),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                Column {
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                ) {
                     Text(
                         text = when(uiState.material) {
                             TipoResiduo.UNKNOWN -> stringResource(R.string.unkown)
@@ -218,17 +223,16 @@ fun TelaPesquisa(
                             else -> stringResource(R.string.destination, uiState.material.name.replaceFirstChar { it.titlecase() })
                         },
                         fontWeight = FontWeight.Bold,
-                        color = Color.Black
+                        color = Color.Black,
                     )
                     Text(
                         text = when(uiState.material) {
                             TipoResiduo.UNKNOWN -> ""
                             else -> stringResource(R.string.destination_found, uiState.totalDeLocais.toString())},
-                        color = Color(greyHex.toColorInt())
+                        color = Color(greyHex.toColorInt()),
                     )
                     BotaoComTexto(
                         texto = stringResource(R.string.change_material),
-                        modifier = Modifier.align(Alignment.CenterHorizontally),
                         onClick = onOpenDialog // Ação de clique para abrir o diálogo
                     )
                 }
